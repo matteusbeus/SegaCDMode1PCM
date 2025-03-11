@@ -135,6 +135,7 @@ int main(void)
      * Set the vertical blank handler to generate Sub-CPU level 2 ints.
      * The Sub-CPU BIOS needs these in order to run.
      */
+    write_long((uint32_t)&vblank_vector, (uint32_t)&gen_lvl2);
     //set_sr(0x2000); // enable interrupts
     SYS_enableInts();
 
