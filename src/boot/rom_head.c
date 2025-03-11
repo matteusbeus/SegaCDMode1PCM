@@ -14,7 +14,7 @@ const ROMHeader rom_header = {
     "SAMPLE PROGRAM                                  ",
     "GM 00000000-00",
     0x000,
-    "JDC              ",
+    "JDC             ",
     0x00000000,
 #if (ENABLE_BANK_SWITCH != 0)
     0x003FFFFF,
