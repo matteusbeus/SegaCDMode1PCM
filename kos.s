@@ -1,10 +1,10 @@
-| ---------------------------------------------------------------------------
-| Kosinski decompression subroutine
-| void Kos_Decomp(uint8_t *src, uint8_t *dst)
-| Inputs:
-| 4(sp) = compressed data location
-| 8(sp) = destination
-| ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# Kosinski decompression subroutine
+# void Kos_Decomp(uint8_t *src, uint8_t *dst)
+# Inputs:
+# 4(sp) = compressed data location
+# 8(sp) = destination
+# ---------------------------------------------------------------------------
 
         .global Kos_Decomp
 Kos_Decomp:
@@ -32,7 +32,7 @@ Kos_Decomp_ChkBit:
         move.b  (a0)+,(a1)+             /* otherwise, copy byte as-is */
         bra.b   Kos_Decomp_Loop
 
-| ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 
 Kos_Decomp_RLE:
         moveq   #0,d3
@@ -68,7 +68,7 @@ Kos_Decomp_ChkBit2:
         move.b  (a0)+,d2                /* calculate offset */
         bra.b   Kos_Decomp_RLELoop
 
-| ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 
 Kos_Decomp_SeparateRLE:
         move.b  (a0)+,d0                /* get first byte */
@@ -88,7 +88,7 @@ Kos_Decomp_RLELoop:
         dbra    d3,Kos_Decomp_RLELoop   /* and repeat the copying */
         bra.b   Kos_Decomp_Loop
 
-| ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 
 Kos_Decomp_SeparateRLE2:
         move.b  (a0)+,d1
@@ -98,11 +98,11 @@ Kos_Decomp_SeparateRLE2:
         move.b  d1,d3                   /* otherwise, copy repeat count */
         bra.b   Kos_Decomp_RLELoop
 
-| ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 
 Kos_Decomp_Done:
         addq.l  #2,sp                   /* restore stack pointer to original state */
         movem.l (sp)+,d2-d6
         rts
 
-| End of function Kos_Decomp
+# End of function Kos_Decomp
