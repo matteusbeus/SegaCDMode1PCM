@@ -2,75 +2,91 @@
  * SEGA CD Mode 1 PCM Player
  * by Victor Luchits
  * and Chilly Willy
+ * and Matt Bennion (Matteusbeus)
  */
 
-#include <stdint.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-
+#include <genesis.h>
 #include "hw_md.h"
 #include "scd_pcm.h"
 
-#define WHITE_TEXT 0x0000
-#define GREEN_TEXT 0x2000
-#define RED_TEXT   0x4000
+extern u32 vblank_vector;
+extern u32 gen_lvl2;
+extern u32 Sub_Start;
+extern u32 Sub_End;
 
-extern uint32_t vblank_vector;
-extern uint32_t gen_lvl2;
-extern uint32_t Sub_Start;
-extern uint32_t Sub_End;
+extern volatile u32 gTicks;             /* incremented every vblank */
 
-extern volatile uint32_t gTicks;             /* incremented every vblank */
+void clear_program_ram(void);
+extern void Kos_Decomp(u8 *src, u8 *dst);
+s32 memcmp(const void *s1, const void *s2, u32 n);
 
-extern void Kos_Decomp(uint8_t *src, uint8_t *dst);
-
-extern uint8_t stereo_test_u8_wav;
+extern u8 stereo_test_u8_wav;
 extern int stereo_test_u8_wav_len;
-extern uint8_t macabre_ima_wav;
+extern u8 macabre_ima_wav;
 extern int macabre_ima_wav_len;
 
-extern uint8_t macabre_sb4_wav;
+extern u8 macabre_sb4_wav;
 extern int macabre_sb4_wav_len;
+
+#define PROGRAM_RAM_ADDRESS  ((volatile u8 *)0x420000)
+#define PROGRAM_RAM_SIZE     (0x20000)
+
+void clear_program_ram(void) {
+    for (u32 i = 0; i < PROGRAM_RAM_SIZE; i++) {
+        PROGRAM_RAM_ADDRESS[i] = 0;
+    }
+}
+
+s32 memcmp(const void *s1, const void *s2, u32 n)
+{
+    const u8 *p1 = s1, *p2 = s2;
+
+    while (n--)
+    {
+        if (*p1 != *p2) return *p1 - *p2;
+        else p1++, p2++;
+    }
+
+    return 0;
+}
 
 int main(void)
 {
-    uint16_t buttons = 0, previous = 0;
-    uint8_t *bios;
+    u16 buttons = 0, previous = 0;
+    u8 *bios;
     char text[44];
-    uint8_t last_src = 0;
-    int16_t pan = 128, vol = 255;
-    uint8_t src_paused[9] = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-
-    clear_screen();
-
+    u8 last_src = 0;
+    s16 pan = 128, vol = 255;
+    u8 src_paused[9] = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+   
     /*
      * Check for CD BIOS
      * When a cart is inserted in the MD, the CD hardware is mapped to
      * 0x400000 instead of 0x000000. So the BIOS ROM is at 0x400000, the
      * Program RAM bank is at 0x420000, and the Word RAM is at 0x600000.
      */
-    bios = (uint8_t *)0x415800;
-    if (memcmp(bios + 0x6D, "SEGA", 4))
+    bios = (u8 *)0x415800;
+    if (memcmp(bios + 0x6D, "SEGA", 4) == 0)  // Check if the BIOS starts with "SEGA"
     {
-        bios = (uint8_t *)0x416000;
-        if (memcmp(bios + 0x6D, "SEGA", 4))
+        bios = (u8 *)0x416000;
+        if (memcmp(bios + 0x6D, "SEGA", 4) == 0)  // Check if the BIOS starts with "SEGA"
         {
-            // check for WonderMega/X'Eye
-            if (memcmp(bios + 0x6D, "WONDER", 6))
+            // Check for WonderMega/X'Eye
+            if (memcmp(bios + 0x6D, "WONDER", 6) == 0)  // Check if the BIOS starts with "WONDER"
             {
-                bios = (uint8_t *)0x41AD00; // might also be 0x40D500
-                // check for LaserActive
-                if (memcmp(bios + 0x6D, "SEGA", 4))
+                bios = (u8 *)0x41AD00; // Might also be 0x40D500
+                // Check for LaserActive
+                if (memcmp(bios + 0x6D, "SEGA", 4) == 0)  // Check if the BIOS starts with "SEGA"
                 {
-                    put_str("No CD detected!", RED_TEXT, 20-7, 12);
-                    while (1) ;
+                    VDP_drawText("No CD detected!", 20-7, 12);
+                    while (1);  // Infinite loop to halt execution
                 }
             }
         }
     }
-    sprintf(text, "CD Sub-CPU BIOS detected at 0x%6X", (uint32_t)bios);
-    put_str(text, GREEN_TEXT, 2, 2);
+    sprintf(text, "CD Sub-CPU BIOS detected at 0x%lX", (u32)bios);
+    VDP_setTextPalette(PAL2);
+    VDP_drawText(text, 2, 2);
 
 	/*
 	 * Reset the Gate Array - this specific sequence of writes is recognized by
@@ -89,38 +105,38 @@ int main(void)
     while (!(read_byte(0xA12001) & 2)) write_byte(0xA12001, 0x02); // wait on bus acknowledge
 
     /*
-     * Decompress Sub-CPU BIOS to Program RAM at 0x00000
-     */
-    put_str("Decompressing Sub-CPU BIOS", GREEN_TEXT, 2, 3);
+    * Decompress Sub-CPU BIOS to Program RAM at 0x00000
+    */ 
+    VDP_drawText("Decompressing Sub-CPU BIOS", 2, 3);
     write_word(0xA12002, 0x0002); // no write-protection, bank 0, 2M mode, Word RAM assigned to Sub-CPU
-    memset((void *)0x420000, 0, 0x20000); // clear program ram first bank - needed for the LaserActive
-    Kos_Decomp(bios, (uint8_t *)0x420000);
+    clear_program_ram(); // clear program ram first bank - needed for the LaserActive
+    Kos_Decomp(bios, (u8 *)0x420000);
 
     /*
      * Copy Sub-CPU program to Program RAM at 0x06000
      */
-    put_str("Copying Sub-CPU Program", GREEN_TEXT, 2, 4);
+    VDP_drawText("Copying Sub-CPU Program", 2, 4);
     memcpy((void *)0x426000, &Sub_Start, (int)&Sub_End - (int)&Sub_Start);
     if (memcmp((void *)0x426000, &Sub_Start, (int)&Sub_End - (int)&Sub_Start))
     {
         sprintf(text, "len %d!", (int)&Sub_End - (int)&Sub_Start);
-        put_str("Failed writing Program RAM!", RED_TEXT, 20-13, 12);
-        put_str(text, RED_TEXT, 20-13, 13);
-        while (1) ;
+        VDP_drawText("Failed writing Program RAM!", 20-13, 12);
+        VDP_drawText(text, 20-13, 13);
+        while (1);
     }
 
     write_byte(0xA1200E, 0x00); // clear main comm port
     write_byte(0xA12002, 0x2A); // write-protect up to 0x05400
     write_byte(0xA12001, 0x01); // clear bus request, deassert reset - allow CD Sub-CPU to run
     while (!(read_byte(0xA12001) & 1)) write_byte(0xA12001, 0x01); // wait on Sub-CPU running
-    put_str("Sub-CPU started", GREEN_TEXT, 2, 5);
-
+    VDP_drawText("Sub-CPU started", 2, 5);
+    
     /*
      * Set the vertical blank handler to generate Sub-CPU level 2 ints.
      * The Sub-CPU BIOS needs these in order to run.
      */
-    write_long((uint32_t)&vblank_vector, (uint32_t)&gen_lvl2);
-    set_sr(0x2000); // enable interrupts
+    //set_sr(0x2000); // enable interrupts
+    SYS_enableInts();
 
     /*
      * Wait for Sub-CPU program to set sub comm port indicating it is running -
@@ -135,7 +151,7 @@ int main(void)
         timeout++;
         if (timeout > 2000000)
         {
-            put_str("CD failed to start!", RED_TEXT, 20-9, 12);
+            VDP_drawText("CD failed to start!", 20-9, 12);
             while (1) ;
         }
     }
@@ -144,14 +160,14 @@ int main(void)
      * Wait for Sub-CPU to indicate it is ready to receive commands
      */
     while (read_byte(0xA1200F) != 0x00) ;
-    put_str("CD initialized and ready to go!", WHITE_TEXT, 20-15, 12);
+    VDP_drawText("CD initialized and ready to go!", 20-15, 12);
 
     /*
     * Initialize the PCM driver
     */
     scd_init_pcm();
 
-    put_str("Uploading samples...", WHITE_TEXT, 20-15, 13);
+    VDP_drawText("Uploading samples...", 20-15, 13);
 
     /*
     * Upload test samples
@@ -160,25 +176,25 @@ int main(void)
     scd_upload_buf(2, &macabre_sb4_wav, macabre_sb4_wav_len);
     scd_upload_buf(3, &stereo_test_u8_wav, stereo_test_u8_wav_len);
 
-    clear_screen();
+    VDP_resetScreen();
 
-    put_str("Mode 1 PCM Player", WHITE_TEXT, 20-8, 2);
+    VDP_drawText("Mode 1 PCM Player", 20-8, 2);
 
-    put_str("Sample A: IMA ADPCM Mono", WHITE_TEXT, 2, 16);
-    put_str("Sample B: SB4 ADPCM Mono", WHITE_TEXT, 2, 17);
-    put_str("Sample C: 8bit PCM Stereo", WHITE_TEXT, 2, 18);
+    VDP_drawText("Sample A: IMA ADPCM Mono", 2, 16);
+    VDP_drawText("Sample B: SB4 ADPCM Mono", 2, 17);
+    VDP_drawText("Sample C: 8bit PCM Stereo", 2, 18);
 
-    put_str("START = Pause last source", WHITE_TEXT, 2, 20);
-    put_str("A/B/C = Play Smpl A/B/C on src 1/2/3", WHITE_TEXT, 2, 21);
-    put_str("X/Y/Z = Play Smpl A/B/C on free src", WHITE_TEXT, 2, 22);
-    put_str("L/R   = pan left/right", WHITE_TEXT, 2, 23);
-    put_str("U/D   = volume incr/decr", WHITE_TEXT, 2, 24);
-    put_str("MODE  = clear", WHITE_TEXT, 2, 25);
+    VDP_drawText("START = Pause last source", 2, 20);
+    VDP_drawText("A/B/C = Play Smpl A/B/C on src 1/2/3", 2, 21);
+    VDP_drawText("X/Y/Z = Play Smpl A/B/C on free src", 2, 22);
+    VDP_drawText("L/R   = pan left/right", 2, 23);
+    VDP_drawText("U/D   = volume incr/decr", 2, 24);
+    VDP_drawText("MODE  = clear", 2, 25);
 
     while (1)
     {
         int new_src = 0;
-
+/*
         delay(2);
         buttons = get_pad(0) & SEGA_CTRL_BUTTONS;
 
@@ -246,22 +262,22 @@ int main(void)
         {
             scd_clear_pcm();
         }
-
+*/
         scd_update_src(last_src, 0, pan, vol, 0);
 
         sprintf(text, "%d", last_src);
-        put_str("Last Source:   ", GREEN_TEXT, 2, 6);
-        put_str(text, WHITE_TEXT, 15, 6);
+        VDP_drawText("Last Source:   ", 2, 6);
+        VDP_drawText(text, 15, 6);
         sprintf(text, "%04X", scd_getpos_for_src(last_src));
-        put_str("Position:    ", GREEN_TEXT, 2, 7);
-        put_str(text, WHITE_TEXT, 15, 7);
+        VDP_drawText("Position:    ", 2, 7);
+        VDP_drawText(text, 15, 7);
 
         sprintf(text, "%03d", (int)pan);
-        put_str("Panning:       ", GREEN_TEXT, 2, 9);
-        put_str(text, WHITE_TEXT, 15, 9);
+        VDP_drawText("Panning:       ", 2, 9);
+        VDP_drawText(text, 15, 9);
         sprintf(text, "%03d", (int)vol);
-        put_str("Volume:        ", GREEN_TEXT, 2, 10);
-        put_str(text, WHITE_TEXT, 15, 10);
+        VDP_drawText("Volume:        ", 2, 10);
+        VDP_drawText(text, 15, 10);
 
         previous = buttons;
     }
@@ -269,6 +285,6 @@ int main(void)
     /*
      * Should never reach here due to while condition
      */
-    clear_screen ();
+    VDP_resetScreen();
     return 0;
 }

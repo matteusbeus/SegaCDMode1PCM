@@ -1,13 +1,9 @@
-#include <stdint.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 #include "scd_pcm.h"
 
 typedef struct
 {
-    uint32_t cmd;
-    uint16_t arg[6];
+    u32 cmd;
+    u16 arg[6];
 } scd_cmd_t;
 
 #define MAX_SCD_CMDS    16
@@ -56,9 +52,9 @@ void scd_init_pcm(void)
     write_byte(0xA1200E, 0x00); // acknowledge receipt of command result
 }
 
-void scd_upload_buf(uint16_t buf_id, const uint8_t *data, uint32_t data_len)
+void scd_upload_buf(u16 buf_id, const u8 *data, u32 data_len)
 {
-    uint8_t *scdWordRam = (uint8_t *)0x600000;
+    u8 *scdWordRam = (u8 *)0x600000;
 
     memcpy(scdWordRam, data, data_len);
 
@@ -70,7 +66,7 @@ void scd_upload_buf(uint16_t buf_id, const uint8_t *data, uint32_t data_len)
     write_byte(0xA1200E, 0x00); // acknowledge receipt of command result
 }
 
-uint8_t scd_play_src(uint8_t src_id, uint16_t buf_id, uint16_t freq, uint8_t pan, uint8_t vol, uint8_t autoloop)
+u8 scd_play_src(u8 src_id, u16 buf_id, u16 freq, u8 pan, u8 vol, u8 autoloop)
 {
     write_long(0xA12010, ((unsigned)src_id<<16)|buf_id); /* src|buf_id */
     write_long(0xA12014, ((unsigned)freq<<16)|pan); /* freq|pan */
@@ -82,7 +78,7 @@ uint8_t scd_play_src(uint8_t src_id, uint16_t buf_id, uint16_t freq, uint8_t pan
     return src_id;
 }
 
-uint8_t scd_punpause_src(uint8_t src_id, uint8_t paused)
+u8 scd_punpause_src(u8 src_id, u8 paused)
 {
     write_long(0xA12010, ((unsigned)src_id<<16)|paused); /* src|paused */
     wait_do_cmd('N'); // SfxPUnPSource command
@@ -91,7 +87,7 @@ uint8_t scd_punpause_src(uint8_t src_id, uint8_t paused)
     return src_id;
 }
 
-void scd_update_src(uint8_t src_id, uint16_t freq, uint8_t pan, uint8_t vol, uint8_t autoloop)
+void scd_update_src(u8 src_id, u16 freq, u8 pan, u8 vol, u8 autoloop)
 {
     write_long(0xA12010, ((unsigned)src_id<<16)); /* src|0 */
     write_long(0xA12014, ((unsigned)freq<<16)|pan); /* freq|pan */
@@ -101,9 +97,9 @@ void scd_update_src(uint8_t src_id, uint16_t freq, uint8_t pan, uint8_t vol, uin
     write_byte(0xA1200E, 0x00); // acknowledge receipt of command result
 }
 
-uint16_t scd_getpos_for_src(uint8_t src_id)
+u16 scd_getpos_for_src(u8 src_id)
 {
-    uint16_t pos;
+    u16 pos;
     write_long(0xA12010, src_id<<16);
     wait_do_cmd('G'); // SfxGetSourcePosition command
     wait_cmd_ack();
@@ -112,7 +108,7 @@ uint16_t scd_getpos_for_src(uint8_t src_id)
     return pos;
 }
 
-void scd_stop_src(uint8_t src_id)
+void scd_stop_src(u8 src_id)
 {
     write_long(0xA12010, ((unsigned)src_id<<16)); /* src|0 */
     wait_do_cmd('O'); // SfxStopSource command
@@ -120,7 +116,7 @@ void scd_stop_src(uint8_t src_id)
     write_byte(0xA1200E, 0x00); // acknowledge receipt of command result
 }
 
-void scd_rewind_src(uint8_t src_id)
+void scd_rewind_src(u8 src_id)
 {
     write_long(0xA12010, ((unsigned)src_id<<16)); /* src|0 */
     wait_do_cmd('W'); // SfxRewindSource command
@@ -140,7 +136,7 @@ int scd_get_playback_status(void)
     return read_byte(0xA1202F);
 }
 
-uint8_t scd_queue_play_src(uint8_t src_id, uint16_t buf_id, uint16_t freq, uint8_t pan, uint8_t vol, uint8_t autoloop)
+u8 scd_queue_play_src(u8 src_id, u16 buf_id, u16 freq, u8 pan, u8 vol, u8 autoloop)
 {
     scd_cmd_t *cmd = scd_cmds + num_scd_cmds;
     if (num_scd_cmds >= MAX_SCD_CMDS)
@@ -156,7 +152,7 @@ uint8_t scd_queue_play_src(uint8_t src_id, uint16_t buf_id, uint16_t freq, uint8
     return 0;
 }
 
-void scd_queue_update_src(uint8_t src_id, uint16_t freq, uint8_t pan, uint8_t vol, uint8_t autoloop)
+void scd_queue_update_src(u8 src_id, u16 freq, u8 pan, u8 vol, u8 autoloop)
 {
     scd_cmd_t *cmd = scd_cmds + num_scd_cmds;
     if (num_scd_cmds >= MAX_SCD_CMDS)
@@ -170,7 +166,7 @@ void scd_queue_update_src(uint8_t src_id, uint16_t freq, uint8_t pan, uint8_t vo
     num_scd_cmds++;
 }
 
-void scd_queue_stop_src(uint8_t src_id)
+void scd_queue_stop_src(u8 src_id)
 {
     scd_cmd_t *cmd = scd_cmds + num_scd_cmds;
     if (num_scd_cmds >= MAX_SCD_CMDS)
