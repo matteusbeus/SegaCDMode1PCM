@@ -1,814 +1,836 @@
 00000000 A __DYNAMIC
-00000000 t _Start_Of_Rom	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:189
-00000000 t _Vecteurs_68K	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:189
+00000000 t _Start_Of_Rom	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:73
+00000000 t _Vecteurs_68K	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:73
 00000020 a font_pal_default_data_size
 00000020 a sgdk_logo_palette_data_size
-00000046 A _sdata
+0000004e A _sdata
 000000ac A stop_xgm_size
-00000100 T rom_header	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:203
-00000200 t _Entry_Point	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1469
-0000023c t NoTMSS	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1469
-00000242 t SkipInit	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1469
-00000248 t _INT	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1469
-0000025a t _EXTINT	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1469
+00000100 T rom_header	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:114
+00000200 t _Entry_Point	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:155
+0000023c t NoTMSS	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:159
+00000242 t SkipInit	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:159
+00000248 t _INT	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:160
+0000025a t _EXTINT	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:163
 00000262 a font_default_data_size
-0000026c t _VINT	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1469
-0000028e t unlock	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1469
-000002b0 t no_user_task	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-000002d2 t no_xgm_task	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-000002e2 t no_bmp_task	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-000002f8 t ldiv	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-00000302 t ld1	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-00000312 t ld2	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-00000320 t ld3	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-00000322 t lmul	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-0000032c t lm1	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-0000033c t lm2	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-0000034a t lm3	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-0000034c t lrem	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-00000356 t lr1	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-00000360 t lr2	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-00000370 t lr3	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-00000372 t ldivu	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-00000380 t lmulu	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-0000038e t lremu	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-0000039e t i_lmul	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1470
-000003ba t i_ldiv	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1471
-000003ca t nz1	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1471
-000003de t is1	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1471
-000003e6 t norm	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1471
-000003f6 t not1	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1471
-00000410 t slow	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1471
+0000026c t _VINT	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:163
+0000028e t unlock	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:167
+000002b0 t no_user_task	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:136
+000002d2 t no_xgm_task	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:145
+000002e2 t no_bmp_task	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:145
+000002f8 t ldiv	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:151
+00000302 t ld1	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:151
+00000312 t ld2	D:\apps\SGDK/src/bmp.c:1470
+00000320 t ld3	D:\apps\SGDK/src/bmp.c:1470
+00000322 t lmul	D:\apps\SGDK/src/bmp.c:1470
+0000032c t lm1	D:\apps\SGDK/src/bmp.c:1470
+0000033c t lm2	D:\apps\SGDK/src/bmp.c:1470
+0000034a t lm3	D:\apps\SGDK/src/bmp.c:1470
+0000034c t lrem	D:\apps\SGDK/src/bmp.c:1470
+00000356 t lr1	D:\apps\SGDK/src/bmp.c:1470
+00000360 t lr2	D:\apps\SGDK/src/bmp.c:1470
+00000370 t lr3	D:\apps\SGDK/src/bmp.c:1470
+00000372 t ldivu	D:\apps\SGDK/src/bmp.c:1470
+00000380 t lmulu	D:\apps\SGDK/src/bmp.c:1470
+0000038e t lremu	D:\apps\SGDK/src/bmp.c:1470
+0000039e t i_lmul	D:\apps\SGDK/src/bmp.c:1470
+000003ba t i_ldiv	D:\apps\SGDK/src/bmp.c:1471
+000003ca t nz1	D:\apps\SGDK/src/bmp.c:1471
+000003de t is1	D:\apps\SGDK/src/bmp.c:1471
+000003e6 t norm	D:\apps\SGDK/src/bmp.c:1471
+000003f6 t not1	D:\apps\SGDK/src/bmp.c:1471
+00000410 t slow	D:\apps\SGDK/src/bmp.c:1471
 0000043a a sgdk_logo_data_size
-0000043c t slower	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1471
-00000440 t moreadj	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1471
-0000044e t adj	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1471
-00000458 t ltuns	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1471
-00000468 T clear_program_ram	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:34
-0000047c T memcmp	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:40
-000004b8 T main	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:53
-000009bc t wait_do_cmd	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:37
-00000a00 t wait_cmd_ack	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:25
-00000a24 T scd_init_pcm	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:45
-00000a48 T scd_upload_buf	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:55
-00000ac2 T scd_update_src	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:90
-00000b3e T scd_getpos_for_src	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:100
-00000b8e T TSK_init
-00000bb4 t .loop
-00000bbc T TSK_superPost
-00000bd2 t no_task
-00000bd4 T TSK_userYield
-00000bdc t userYield
-00000c06 T _trap_0
-00000c2a T BMP_doVBlankProcess	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:1214
-00000c34 T DMA_setMaxTransferSize	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:135
-00000c44 T DMA_setMaxTransferSizeToDefault	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:141
-00000c68 T DMA_clearQueue	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:183
-00000c86 T DMA_setBufferSize	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:151
-00000ce0 T DMA_setBufferSizeToDefault	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:167
-00000cf4 T DMA_initEx	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:52
-00000da4 T DMA_init	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:47
-00000dba T DMA_flushQueue	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:194
-00000e2e T DMA_releaseTemp	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:368
-00000e3e T DMA_allocateTemp	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:346
-00000eaa T DMA_queueDmaFast	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:454
-00000fee T DMA_allocateAndQueueDma	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:382
-0000104a T DMA_copyAndQueueDma	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:406
-000010be T DMA_queueDma	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:432
-00001148 T DMA_doDmaFast	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:566
-0000124c T DMA_doDma	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:545
-000012d0 T DMA_doCPUCopyDirect	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:663
-0000137c T DMA_doCPUCopy	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:640
-000013f0 T DMA_transfer	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:322
-000014bc T DMA_doVRamFill	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:704
-00001560 T divu	C:/Users/justs/Documents/GitHub/SGDK/src/maths.c:106
-0000156c T F16_toInt	C:/Users/justs/Documents/GitHub/SGDK/src/maths.c:286
-00001574 T MEM_init	C:/Users/justs/Documents/GitHub/SGDK/src/memory.c:155
-0000159c T MEM_getFree	C:/Users/justs/Documents/GitHub/SGDK/src/memory.c:186
-000015c8 T MEM_getLargestFreeBlock	C:/Users/justs/Documents/GitHub/SGDK/src/memory.c:208
-000015fe T MEM_alloc	C:/Users/justs/Documents/GitHub/SGDK/src/memory.c:259
-00001742 T MEM_free	C:/Users/justs/Documents/GitHub/SGDK/src/memory.c:386
-00001772 T MEM_pack	C:/Users/justs/Documents/GitHub/SGDK/src/memory.c:409
-000017e2 T memset	C:/Users/justs/Documents/GitHub/SGDK/src/memory.c:694
-00001802 T memcpy	C:/Users/justs/Documents/GitHub/SGDK/src/memory.c:701
-0000181e T PAL_setColors	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:274
-0000184c T PAL_setPalette	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:284
-0000186e T PAL_doFadeStep	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:342
-0000192e t uint16ToStr	C:/Users/justs/Documents/GitHub/SGDK/src/string.c:197
-00001a0e T strlen	C:/Users/justs/Documents/GitHub/SGDK/src/string.c:42
-00001a20 T strnlen	C:/Users/justs/Documents/GitHub/SGDK/src/string.c:52
-00001a58 T strcpy	C:/Users/justs/Documents/GitHub/SGDK/src/string.c:78
-00001a6a T strcat	C:/Users/justs/Documents/GitHub/SGDK/src/string.c:121
-00001a86 T intToHex	C:/Users/justs/Documents/GitHub/SGDK/src/string.c:237
-00001b40 T uintToStr	C:/Users/justs/Documents/GitHub/SGDK/src/string.c:175
-00001bde T vsprintf	C:/Users/justs/Documents/GitHub/SGDK/src/string.c:374
-00002120 T sprintf	C:/Users/justs/Documents/GitHub/SGDK/src/string.c:640
-0000213e T _int_callback	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:414
-00002140 T _vblank_dummy_callback	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:421
-00002142 T _vint_dummy_callback	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:427
-00002144 T _hint_dummy_callback	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:433
-00002146 T _extint_dummy_callback	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:439
-00002148 t internal_reset	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:597
-00002230 T SYS_disableInts	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:801
-00002262 T SYS_enableInts	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:829
-00002290 T SYS_setExtIntCallback	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:875
-000022a6 T SYS_isInVInt	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:917
-000022b2 T SYS_doVBlankProcessEx	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:660
-00002428 T SYS_doVBlankProcess	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:655
-00002436 T _start_entry	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:445
-000024ea T _reset_entry	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:587
-00002506 T addFrameLoad	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:977
-00002572 T getSubTickInternal	C:/Users/justs/Documents/GitHub/SGDK/src/timer.c:44
-000025cc T getSubTick	C:/Users/justs/Documents/GitHub/SGDK/src/timer.c:57
-00002600 T getTick	C:/Users/justs/Documents/GitHub/SGDK/src/timer.c:63
-0000262c T waitSubTick	C:/Users/justs/Documents/GitHub/SGDK/src/timer.c:109
-000026b4 T waitTick	C:/Users/justs/Documents/GitHub/SGDK/src/timer.c:159
-00002728 T waitMs	C:/Users/justs/Documents/GitHub/SGDK/src/timer.c:194
-0000278c T setRandomSeed	C:/Users/justs/Documents/GitHub/SGDK/src/tools.c:30
-000027a4 T KLog	C:/Users/justs/Documents/GitHub/SGDK/src/tools.c:73
-000027c8 T kprintf	C:/Users/justs/Documents/GitHub/SGDK/src/tools.c:57
-00002804 T KLog_U2_	C:/Users/justs/Documents/GitHub/SGDK/src/tools.c:119
-0000287a T KLog_U3_	C:/Users/justs/Documents/GitHub/SGDK/src/tools.c:153
-0000290e T allocateTileSet	C:/Users/justs/Documents/GitHub/SGDK/src/tools.c:901
-00002938 T unpack	C:/Users/justs/Documents/GitHub/SGDK/src/tools.c:1132
-00002970 T unpackTileSet	C:/Users/justs/Documents/GitHub/SGDK/src/tools.c:1053
-000029e4 T VDP_getReg	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:194
-00002a04 T VDP_setEnable	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:328
-00002a36 T VDP_setScrollingMode	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:531
-00002a6e T VDP_getAutoInc	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:559
-00002a76 T VDP_setAutoInc	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:564
-00002a90 T VDP_getHVLatching	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:591
-00002a9c T VDP_setHVLatching	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:596
-00002ace T VDP_waitDMACompletion	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:842
-00002adc T VDP_resetScreen	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:134
-00002c66 T getAdjustedVCounterInternal	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:965
-00002cc8 T VDP_waitVBlank	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:887
-00002da4 T VDP_waitVSync	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:953
-00002db2 T updateUserTileMaxIndex	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:1026
-00002dcc t updateMapsAddress	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:1032
-00002e4e T VDP_init	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:65
-00002fb0 T VDP_setReg	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:200
-000031d8 T VDP_setHorizontalScroll	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:34
-0000321a T VDP_setVerticalScrollTile	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:122
-00003262 T VDP_doVBlankScrollProcess	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:132
-00003324 T VDP_setTextPlane	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:210
-0000332e T VDP_setTextPalette	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:215
-00003352 T VDP_setTextPriority	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:221
-00003372 T VDP_drawTextEx	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:227
-0000343c T VDP_drawTextBG	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:321
-0000346c T VDP_drawText	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:380
-00003492 T VDP_releaseAllSprites	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_spr.c:35
-000034c0 T VDP_clearSprites	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_spr.c:151
-000034ce T VDP_resetSprites	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_spr.c:27
-000034dc t prepareTileMapDataRowEx	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_tile.c:942
-00003572 T VDP_loadTileData	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_tile.c:28
-000035a0 T VDP_loadTileSet	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_tile.c:38
-00003616 T VDP_loadFont	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_tile.c:60
-0000363a T VDP_fillTileData	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_tile.c:70
-0000367a T VDP_getPlaneAddress	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_tile.c:80
-00003730 T VDP_setTileMapDataEx	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_tile.c:147
-000037fa t setTileMapDataRowEx	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_tile.c:451
-000038f2 T VDP_setTileMapDataRowEx	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_tile.c:510
-000039b2 T Z80_isBusTaken	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:60
-000039c4 T Z80_requestBus	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:69
-000039ea T Z80_getAndRequestBus	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:89
-00003a26 T Z80_releaseBus	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:114
-00003a30 T Z80_startReset	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:123
-00003a3a T Z80_endReset	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:131
-00003a44 T Z80_setBank	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:140
-00003a58 T Z80_clear	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:167
-00003aa0 T Z80_upload	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:183
-00003b08 T Z80_unloadDriver	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:223
-00003b64 T Z80_loadDriverInternal	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:253
-00003bca T Z80_loadDriver	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:285
-00003c70 T Z80_init	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:43
-00003ca6 T Z80_isDriverReady	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:324
-00003cdc T Z80_useBusProtection	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:343
-00003ce6 T Z80_setBusProtection	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:348
-00003d3a T Z80_enableBusProtection	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:367
-00003d48 T Z80_disableBusProtection	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:372
-00003d54 T Z80_getForceDelayDMA	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:377
-00003d60 T SND_NULL_loadDriver	C:/Users/justs/Documents/GitHub/SGDK/src/snd/sound.c:19
-00003dbc t setNextXFrame	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm.c:605
-00003e16 T XGM_unloadDriver	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm.c:94
-00003e32 T XGM_setMusicTempo	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm.c:493
-00003e54 T XGM_loadDriver	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm.c:54
-00003f38 T XGM_doVBlankProcess	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm.c:662
-00003f8e t releaseAccess	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:1057
-00003fa4 t getAccess	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:1029
-00004010 t setLoopNumber	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:747
-0000403a t setFMVolume	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:828
-00004092 t setPSGVolume	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:846
-000040ea t setMusicTempo	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:773
-0000414a T XGM2_loadDriver	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:211
-0000420a T XGM2_unloadDriver	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:242
-00004216 T XGM2_stop	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:421
-00004274 T XGM2_pause	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:446
-000042c0 T XGM2_doVBlankFadeProcess	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:701
-00004364 T SND_DPCM2_loadDriver	C:/Users/justs/Documents/GitHub/SGDK/src/snd/pcm/snd_dpcm2.c:23
-000043ec T SND_DPCM2_unloadDriver	C:/Users/justs/Documents/GitHub/SGDK/src/snd/pcm/snd_dpcm2.c:53
-000043ee T SND_PCM_loadDriver	C:/Users/justs/Documents/GitHub/SGDK/src/snd/pcm/snd_pcm.c:22
-00004476 T SND_PCM_unloadDriver	C:/Users/justs/Documents/GitHub/SGDK/src/snd/pcm/snd_pcm.c:52
-00004478 T SND_PCM4_loadDriver	C:/Users/justs/Documents/GitHub/SGDK/src/snd/pcm/snd_pcm4.c:24
-00004514 T SND_PCM4_unloadDriver	C:/Users/justs/Documents/GitHub/SGDK/src/snd/pcm/snd_pcm4.c:58
-00004516 T flushQueue
-0000452a t .fq_loop
-00004538 t .fq_end
-0000453a T KDebug_Alert
-00004556 T memset_
-000045ce T memsetU16
-0000462c T memcpy_
-000046d0 T SYS_getInterruptMaskLevel
-000046da T SYS_setInterruptMaskLevel
-000046f2 T SYS_getAndSetInterruptMaskLevel
-0000470c T aplib_unpack
-00004712 t aplib_decrunch
-00004726 t .copy_byte
-00004728 t .next_sequence_init
-0000472a t .next_sequence
-0000473a t .get_3_bits
-0000474a t .write_byte
-0000474e t .short_match
-0000475c t .code_pair
-00004768 t .normal_code_pair
-00004776 t .compare_1280
-0000477a t .compare_128
-0000477e t .domatch_with_2inc
-00004780 t .domatch_with_inc
-00004782 t .domatch_new_lastpos
-00004784 t .copy_code_pair
-0000478a t .loop_do_copy
-00004794 t .get_bit
-0000479c t .still_bits_left
-0000479e t .decode_gamma
-000047a0 t .get_more_gamma
-000047aa t .end_decrunch
-000047b4 T lz4w_unpack
-000047ba t lz4w_unpack_a
-000047d4 t .jump_table
-00004cd2 t .lmr_len_01
-00004de6 t .lmr_len_00
-00004ff8 t .lm_len_00
-00004ffe t .next
-0000500e t .litE_mat0
-00005010 t .litC_mat0
-00005012 t .litA_mat0
-00005014 t .lit8_mat0
-00005016 t .lit6_mat0
-00005018 t .lit4_mat0
-0000501a t .lit2_mat0
-00005020 t .long_match_1
-00005032 t .litF_mat0
-00005034 t .litD_mat0
-00005036 t .litB_mat0
-00005038 t .lit9_mat0
-0000503a t .lit7_mat0
-0000503c t .lit5_mat0
-0000503e t .lit3_mat0
-00005040 t .lit1_mat0
-00005046 t .long_match_2
-00005058 t .lit0_mat0
-0000505c t .long_match_3
-0000506e t .lm_rom
-0000507a t .done
-00005080 t .no_byte
-0000508a t .lmr_jump_table
-0000548a t .litE_mat1
-0000548c t .litC_mat1
-0000548e t .litA_mat1
-00005490 t .lit8_mat1
-00005492 t .lit6_mat1
-00005494 t .lit4_mat1
-00005496 t .lit2_mat1
-00005498 t .lit0_mat1
-000054b6 t .litF_mat1
-000054b8 t .litD_mat1
-000054ba t .litB_mat1
-000054bc t .lit9_mat1
-000054be t .lit7_mat1
-000054c0 t .lit5_mat1
-000054c2 t .lit3_mat1
-000054c4 t .lit1_mat1
-000054e4 t .litE_mat2
-000054e6 t .litC_mat2
-000054e8 t .litA_mat2
-000054ea t .lit8_mat2
-000054ec t .lit6_mat2
-000054ee t .lit4_mat2
-000054f0 t .lit2_mat2
-000054f2 t .lit0_mat2
-00005512 t .litF_mat2
-00005514 t .litD_mat2
-00005516 t .litB_mat2
-00005518 t .lit9_mat2
-0000551a t .lit7_mat2
-0000551c t .lit5_mat2
-0000551e t .lit3_mat2
-00005520 t .lit1_mat2
-00005542 t .litE_mat3
-00005544 t .litC_mat3
-00005546 t .litA_mat3
-00005548 t .lit8_mat3
-0000554a t .lit6_mat3
-0000554c t .lit4_mat3
-0000554e t .lit2_mat3
-00005550 t .lit0_mat3
-00005572 t .litF_mat3
-00005574 t .litD_mat3
-00005576 t .litB_mat3
-00005578 t .lit9_mat3
-0000557a t .lit7_mat3
-0000557c t .lit5_mat3
-0000557e t .lit3_mat3
-00005580 t .lit1_mat3
-000055a4 t .litE_mat4
-000055a6 t .litC_mat4
-000055a8 t .litA_mat4
-000055aa t .lit8_mat4
-000055ac t .lit6_mat4
-000055ae t .lit4_mat4
-000055b0 t .lit2_mat4
-000055b2 t .lit0_mat4
-000055d6 t .litF_mat4
-000055d8 t .litD_mat4
-000055da t .litB_mat4
-000055dc t .lit9_mat4
-000055de t .lit7_mat4
-000055e0 t .lit5_mat4
-000055e2 t .lit3_mat4
-000055e4 t .lit1_mat4
-0000560a t .litE_mat5
-0000560c t .litC_mat5
-0000560e t .litA_mat5
-00005610 t .lit8_mat5
-00005612 t .lit6_mat5
-00005614 t .lit4_mat5
-00005616 t .lit2_mat5
-00005618 t .lit0_mat5
-0000563e t .litF_mat5
-00005640 t .litD_mat5
-00005642 t .litB_mat5
-00005644 t .lit9_mat5
-00005646 t .lit7_mat5
-00005648 t .lit5_mat5
-0000564a t .lit3_mat5
-0000564c t .lit1_mat5
-00005674 t .litE_mat6
-00005676 t .litC_mat6
-00005678 t .litA_mat6
-0000567a t .lit8_mat6
-0000567c t .lit6_mat6
-0000567e t .lit4_mat6
-00005680 t .lit2_mat6
-00005682 t .lit0_mat6
-000056aa t .litF_mat6
-000056ac t .litD_mat6
-000056ae t .litB_mat6
-000056b0 t .lit9_mat6
-000056b2 t .lit7_mat6
-000056b4 t .lit5_mat6
-000056b6 t .lit3_mat6
-000056b8 t .lit1_mat6
-000056e2 t .litE_mat7
-000056e4 t .litC_mat7
-000056e6 t .litA_mat7
-000056e8 t .lit8_mat7
-000056ea t .lit6_mat7
-000056ec t .lit4_mat7
-000056ee t .lit2_mat7
-000056f0 t .lit0_mat7
-0000571a t .litF_mat7
-0000571c t .litD_mat7
-0000571e t .litB_mat7
-00005720 t .lit9_mat7
-00005722 t .lit7_mat7
-00005724 t .lit5_mat7
-00005726 t .lit3_mat7
-00005728 t .lit1_mat7
-00005754 t .litE_mat8
-00005756 t .litC_mat8
-00005758 t .litA_mat8
-0000575a t .lit8_mat8
-0000575c t .lit6_mat8
-0000575e t .lit4_mat8
-00005760 t .lit2_mat8
-00005762 t .lit0_mat8
-0000578e t .litF_mat8
-00005790 t .litD_mat8
-00005792 t .litB_mat8
-00005794 t .lit9_mat8
-00005796 t .lit7_mat8
-00005798 t .lit5_mat8
-0000579a t .lit3_mat8
-0000579c t .lit1_mat8
-000057ca t .litE_mat9
-000057cc t .litC_mat9
-000057ce t .litA_mat9
-000057d0 t .lit8_mat9
-000057d2 t .lit6_mat9
-000057d4 t .lit4_mat9
-000057d6 t .lit2_mat9
-000057d8 t .lit0_mat9
-00005806 t .litF_mat9
-00005808 t .litD_mat9
-0000580a t .litB_mat9
-0000580c t .lit9_mat9
-0000580e t .lit7_mat9
-00005810 t .lit5_mat9
-00005812 t .lit3_mat9
-00005814 t .lit1_mat9
-00005844 t .litE_matA
-00005846 t .litC_matA
-00005848 t .litA_matA
-0000584a t .lit8_matA
-0000584c t .lit6_matA
-0000584e t .lit4_matA
-00005850 t .lit2_matA
-00005852 t .lit0_matA
-00005882 t .litF_matA
-00005884 t .litD_matA
-00005886 t .litB_matA
-00005888 t .lit9_matA
-0000588a t .lit7_matA
-0000588c t .lit5_matA
-0000588e t .lit3_matA
-00005890 t .lit1_matA
-000058c2 t .litE_matB
-000058c4 t .litC_matB
-000058c6 t .litA_matB
-000058c8 t .lit8_matB
-000058ca t .lit6_matB
-000058cc t .lit4_matB
-000058ce t .lit2_matB
-000058d0 t .lit0_matB
-00005902 t .litF_matB
-00005904 t .litD_matB
-00005906 t .litB_matB
-00005908 t .lit9_matB
-0000590a t .lit7_matB
-0000590c t .lit5_matB
-0000590e t .lit3_matB
-00005910 t .lit1_matB
-00005944 t .litE_matC
-00005946 t .litC_matC
-00005948 t .litA_matC
-0000594a t .lit8_matC
-0000594c t .lit6_matC
-0000594e t .lit4_matC
-00005950 t .lit2_matC
-00005952 t .lit0_matC
-00005986 t .litF_matC
-00005988 t .litD_matC
-0000598a t .litB_matC
-0000598c t .lit9_matC
-0000598e t .lit7_matC
-00005990 t .lit5_matC
-00005992 t .lit3_matC
-00005994 t .lit1_matC
-000059ca t .litE_matD
-000059cc t .litC_matD
-000059ce t .litA_matD
-000059d0 t .lit8_matD
-000059d2 t .lit6_matD
-000059d4 t .lit4_matD
-000059d6 t .lit2_matD
-000059d8 t .lit0_matD
-00005a0e t .litF_matD
-00005a10 t .litD_matD
-00005a12 t .litB_matD
-00005a14 t .lit9_matD
-00005a16 t .lit7_matD
-00005a18 t .lit5_matD
-00005a1a t .lit3_matD
-00005a1c t .lit1_matD
-00005a54 t .litE_matE
-00005a56 t .litC_matE
-00005a58 t .litA_matE
-00005a5a t .lit8_matE
-00005a5c t .lit6_matE
-00005a5e t .lit4_matE
-00005a60 t .lit2_matE
-00005a62 t .lit0_matE
-00005a9a t .litF_matE
-00005a9c t .litD_matE
-00005a9e t .litB_matE
-00005aa0 t .lit9_matE
-00005aa2 t .lit7_matE
-00005aa4 t .lit5_matE
-00005aa6 t .lit3_matE
-00005aa8 t .lit1_matE
-00005ae2 t .litE_matF
-00005ae4 t .litC_matF
-00005ae6 t .litA_matF
-00005ae8 t .lit8_matF
-00005aea t .lit6_matF
-00005aec t .lit4_matF
-00005aee t .lit2_matF
-00005af0 t .lit0_matF
-00005b2a t .litF_matF
-00005b2c t .litD_matF
-00005b2e t .litB_matF
-00005b30 t .lit9_matF
-00005b32 t .lit7_matF
-00005b34 t .lit5_matF
-00005b36 t .lit3_matF
-00005b38 t .lit1_matF
-00005b74 t TH_CONTROL_PHASE	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:639
-00005b92 t THREELINE_HANDSHAKE	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:655
-00005be6 t externalIntCB	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:281
-00005cb2 t read3Btn	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:675
-00005d02 t read6Btn	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:693
-00005d80 t start3lhs	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:722
-00005e72 t readMouse	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:773
-00006076 t readTrackball	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:1175
-000061cc t readTeamPlayer	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:844
-00006578 t readLightgun	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:1027
-0000691e T JOY_setSupport	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:316
-00006d9a T JOY_reset	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:59
-00007168 T JOY_init	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:50
-00007176 T JOY_update	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:1248
-0000746c T PSG_reset	C:/Users/justs/Documents/GitHub/SGDK/src/psg.c:9
-000074a4 T SPR_isInitialized	C:/Users/justs/Documents/GitHub/SGDK/src/sprite_eng.c:190
-000074b0 T SPR_defragVRAM	C:/Users/justs/Documents/GitHub/SGDK/src/sprite_eng.c:539
-00007560 T SRAM_disable	C:/Users/justs/Documents/GitHub/SGDK/src/sram.c:16
-0000756a T getZeroU8	C:/Users/justs/Documents/GitHub/SGDK/src/types.c:4
-0000756e T VRAM_releaseRegion	C:/Users/justs/Documents/GitHub/SGDK/src/vram.c:34
-00007588 T VRAM_clearRegion	C:/Users/justs/Documents/GitHub/SGDK/src/vram.c:41
-000075b2 T VRAM_createRegion	C:/Users/justs/Documents/GitHub/SGDK/src/vram.c:23
-000075ee T VRAM_getFree	C:/Users/justs/Documents/GitHub/SGDK/src/vram.c:54
-00007622 T VRAM_getLargestFreeBlock	C:/Users/justs/Documents/GitHub/SGDK/src/vram.c:79
-0000765c T VRAM_alloc	C:/Users/justs/Documents/GitHub/SGDK/src/vram.c:135
-00007772 T YM2612_write	C:/Users/justs/Documents/GitHub/SGDK/src/ym2612.c:118
-000077a2 t writeSlotReg	C:/Users/justs/Documents/GitHub/SGDK/src/ym2612.c:11
-000077f0 t writeChannelReg	C:/Users/justs/Documents/GitHub/SGDK/src/ym2612.c:17
-00007834 T YM2612_reset	C:/Users/justs/Documents/GitHub/SGDK/src/ym2612.c:23
-000079f4 T Sub_Start
-0000995c T stereo_test_u8_wav
-0000995c T Sub_End
-0001ff44 T macabre_ima_wav
-0001ff44 t stereo_test_u8_wav_end
-00037d80 t macabre_ima_wav_end
-00037d80 T macabre_sb4_wav
-0004fb1c t macabre_sb4_wav_end
-0004fb1c T stereo_test_u8_wav_len
-0004fb20 T macabre_ima_wav_len
-0004fb24 T macabre_sb4_wav_len
-0004fb28 T write_byte
-0004fb34 T write_word
-0004fb40 T write_long
-0004fb4c T read_byte
-0004fb54 T read_word
-0004fb5c T read_long
-0004fb64 T Kos_Decomp
-0004fb7c t Kos_Decomp_Loop
-0004fb8e t Kos_Decomp_ChkBit
-0004fb96 t Kos_Decomp_RLE
-0004fbaa t Kos_Decomp_ChkBit2
-0004fbda t Kos_Decomp_SeparateRLE
-0004fbf0 t Kos_Decomp_RLELoop
-0004fbfc t Kos_Decomp_SeparateRLE2
-0004fc0c t Kos_Decomp_Done
-0004fc14 T MDDBG__SymbolDataPtr
-0004fc18 t __ErrorHandler
-0004fc18 t MDDBG__ErrorHandler
-0004fd40 t MDDBG__Error_IdleLoop
-0004fd5a t MDDBG__Error_InitConsole
-0004fd66 t MDDBG__Error_MaskStackBoundaries
-0004fdd0 t MDDBG__Error_DrawOffsetLocation
-0004fdd4 t MDDBG__Error_DrawOffsetLocation2
-0004fdda t MDDBG__Error_DrawOffsetLocation__inj
-0004fe68 t MDDBG__ErrorHandler_SetupVDP
-0004fe9e t MDDBG__ErrorHandler_VDPConfig
-0004feb4 t MDDBG__ErrorHandler_VDPConfig_Nametables
-0004fef0 t MDDBG__ErrorHandler_ConsoleConfig_Initial
-0004fef4 t MDDBG__ErrorHandler_ConsoleConfig_Shared
-0004ff24 t MDDBG__Str_OffsetLocation_24bit
-0004ff2d t MDDBG__Str_OffsetLocation_32bit
-0004ff68 t MDDBG__Art1bpp_Font
-00050262 t MDDBG__GetSymbolByOffset
-0005057c t MDDBG__FormatString
-00050656 t MDDBG__Console_Init
-00050694 t MDDBG__Console_Reset
-00050696 t MDDBG__Console_InitShared
-000506e0 t MDDBG__Console_SetPosAsXY_Stack
-000506e6 t MDDBG__Console_SetPosAsXY
-0005071a t MDDBG__Console_GetPosAsXY
-00050740 t MDDBG__Console_StartNewLine
-0005076e t MDDBG__Console_SetBasePattern
-0005078a t MDDBG__Console_SetWidth
-000507a8 t MDDBG__Console_WriteLine_WithPattern
-000507aa t MDDBG__Console_WriteLine
-000507ae t MDDBG__Console_Write
-00050874 t MDDBG__Console_WriteLine_Formatted
-00050878 t MDDBG__Console_Write_Formatted
-000508a8 t MDDBG__Decomp1bpp
-000508c4 t MDDBG__KDebug_WriteLine_Formatted
-000508c8 t MDDBG__KDebug_Write_Formatted
-0005091c t MDDBG__KDebug_FlushLine
-00050926 t MDDBG__KDebug_WriteLine
-0005092a t MDDBG__KDebug_Write
-00050958 t MDDBG__ErrorHandler_ConsoleOnly
-0005097e t MDDBG__ErrorHandler_ClearConsole
-000509a8 t MDDBG__ErrorHandler_PauseConsole
-000509e2 t MDDBG__ErrorHandler_PagesController
-00050a42 t MDDBG__VSync
-00050a7c t MDDBG__ErrorHandler_ExtraDebuggerList
-00050a88 t MDDBG__Debugger_AddressRegisters
-00050ad4 t MDDBG__Debugger_Backtrace
-00050b72 T _Bus_Error
-00050b72 t MDDBG__BusError
-00050b86 T _Address_Error
-00050b86 t MDDBG__AddressError
-00050b9e T _Illegal_Instruction
-00050b9e t MDDBG__IllegalInstr
-00050bbc T _Zero_Divide
-00050bbc t MDDBG__ZeroDivide
-00050bd2 T _Chk_Instruction
-00050bd2 t MDDBG__ChkInstr
-00050bec T _Trapv_Instruction
-00050bec t MDDBG__TrapvInstr
-00050c08 T _Privilege_Violation
-00050c08 t MDDBG__PrivilegeViol
-00050c26 T _Trace
-00050c26 t MDDBG__Trace
-00050c36 T _Line_1010_Emulation
-00050c36 t MDDBG__Line1010Emu
-00050c52 T _Line_1111_Emulation
-00050c52 t MDDBG__Line1111Emu
-00050c6e T _Error_Exception
-00050c6e t MDDBG__ErrorExcept
-00050d00 T smp_null
-00050e00 T smp_null_dpcm
-00050e80 T __mulsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:442
-00050e80 T __mulsi3_internal	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:442
-00050ea4 T __udivsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:469
-00050ea4 T __udivsi3_internal	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:469
-00050ecc t L3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:486
-00050ece t L4	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:487
-00050efa t L5	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:508
-00050efc t L6	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:510
-00050f00 T __divsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:547
-00050f00 T __divsi3_internal	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:547
-00050f0e t L1	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:558
-00050f18 t L2	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:567
-00050f2a t L3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:576
-00050f30 T __umodsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:585
-00050f60 T __modsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:611
-00050f90 T __CTOR_LIST__
-00050f98 T __CTOR_END__
-00050f98 T __DTOR_LIST__
-00050fa0 T __DTOR_END__
-00051340 T palette_blue	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:163
-00051360 T palette_green	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:142
-00051380 T palette_red	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:121
-000513a0 T palette_grey	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:100
-000513c7 t digits	C:/Users/justs/Documents/GitHub/SGDK/src/string.c:26
-00051490 t lowercase_hexchars	C:/Users/justs/Documents/GitHub/SGDK/src/string.c:24
-000514a1 t uppercase_hexchars	C:/Users/justs/Documents/GitHub/SGDK/src/string.c:23
-00051574 T psgVolTable	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:148
-000515d8 T fmVolTable	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:133
-0005163c T tab_vol	C:/Users/justs/Documents/GitHub/SGDK/src/snd/pcm/tab_vol.c:4
-0005263c t sgdk_logo_palette
-00052642 T sgdk_logo
-00052650 T font_default
-00052658 T font_pal_default
-0005265e T drv_null
-00052698 T drv_xgm
-00053d98 T drv_dpcm2
-00054b98 T drv_pcm
-000556c8 T drv_pcm4
-00056136 T drv_xgm2
-00058136 t xlt_all.0	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:846
-00058146 t xlt.1	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:970
-000581d4 T __INIT_SECTION__
-000581d6 T __FINI_SECTION__
-000581d8 T _etext
-000581d8 t sgdk_logo_palette_data
-000581f8 t font_pal_default_data
-00058218 T stop_xgm
-000582c4 t font_default_data
-00058526 t sgdk_logo_data
-00058960 A _stext
-e0ff0000 D task_sr
-e0ff0002 D task_pc
-e0ff0006 D task_regs
-e0ff0042 D task_lock
-e0ff0044 d randbase	C:/Users/justs/Documents/GitHub/SGDK/src/tools.c:25
-e0ff0046 D _edata
-e0ff0046 B _start
-e0ff0046 b timeout.0	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:150
-e0ff004a b phase	C:/Users/justs/Documents/GitHub/SGDK/src/bmp.c:68
-e0ff004c b queueTransferSize	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:41
-e0ff004e b queueIndexLimit	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:40
-e0ff0050 b queueIndex	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:39
-e0ff0052 b dataBufferSize	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:36
-e0ff0054 b flag	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:33
-e0ff0056 b maxTransferPerFrame	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:32
-e0ff0058 b queueSize	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:31
-e0ff005a b nextDataBuffer	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:28
-e0ff005e B dmaDataBuffer	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:27
-e0ff0062 B dmaQueues	C:/Users/justs/Documents/GitHub/SGDK/src/dma.c:24
-e0ff0066 b heap	C:/Users/justs/Documents/GitHub/SGDK/src/memory.c:153
-e0ff006a b free	C:/Users/justs/Documents/GitHub/SGDK/src/memory.c:152
-e0ff006e b fadeCounter	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:201
-e0ff0070 b fadeSize	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:200
-e0ff0072 b fadeInd	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:199
-e0ff0074 b fadeSB	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:197
-e0ff00f4 b fadeSG	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:196
-e0ff0174 b fadeSR	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:195
-e0ff01f4 b fadeB	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:194
-e0ff0274 b fadeG	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:193
-e0ff02f4 b fadeR	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:192
-e0ff0374 B fadeCurrentPal	C:/Users/justs/Documents/GitHub/SGDK/src/pal.c:189
-e0ff03f4 b lastVTimer.0	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:979
-e0ff03f6 b lastSubTick	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:122
-e0ff03fa b frameCnt	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:121
-e0ff03fe b cpuFrameLoad	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:120
-e0ff0400 b frameLoadIndex	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:119
-e0ff0402 b frameLoads	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:118
-e0ff0412 b flags	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:115
-e0ff0414 b disableIntStack	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:114
-e0ff0416 B intLevelSave	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:113
-e0ff0418 B intTrace	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:110
-e0ff041a B VBlankProcess	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:109
-e0ff041c B vblankCB	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:107
-e0ff0420 B intCB	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:104
-e0ff0424 B eintCB	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:103
-e0ff0428 B hintCaller	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:102
-e0ff042e B vintCB	C:/Users/justs/Documents/GitHub/SGDK/src/sys.c:101
-e0ff0432 b lastTick	C:/Users/justs/Documents/GitHub/SGDK/src/timer.c:39
-e0ff0436 B vtimer	C:/Users/justs/Documents/GitHub/SGDK/src/timer.c:36
-e0ff043a B randomSeedSet	C:/Users/justs/Documents/GitHub/SGDK/src/tools.c:27
-e0ff043c B lastVCnt	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:62
-e0ff043e B windowWidthSft	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:60
-e0ff0440 B planeHeightSft	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:59
-e0ff0442 B planeWidthSft	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:58
-e0ff0444 B windowWidth	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:57
-e0ff0446 B planeHeight	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:56
-e0ff0448 B planeWidth	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:55
-e0ff044a B screenHeight	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:54
-e0ff044c B screenWidth	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:53
-e0ff044e B userTileMaxIndex	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:51
-e0ff0450 B maps_addr	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:49
-e0ff0452 B slist_addr	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:48
-e0ff0454 B hscrl_addr	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:47
-e0ff0456 B bgb_addr	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:46
-e0ff0458 B bga_addr	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:45
-e0ff045a B window_addr	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:44
-e0ff045c b regValues	C:/Users/justs/Documents/GitHub/SGDK/src/vdp.c:42
-e0ff046f b vscroll_update	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:31
-e0ff0470 b hscroll_update	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:30
-e0ff0472 b vscroll	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:29
-e0ff0476 b hscroll	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:28
-e0ff047a B curTileInd	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:26
-e0ff047c b text_basetile	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:23
-e0ff047e b text_plan	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_bg.c:22
-e0ff0482 b free	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_spr.c:24
-e0ff0486 b allocStack	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_spr.c:22
-e0ff05c6 B highestVDPSpriteIndex	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_spr.c:19
-e0ff05c8 B vdpSpriteCache	C:/Users/justs/Documents/GitHub/SGDK/src/vdp_spr.c:14
-e0ff08c8 B busProtectSignalAddress	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:24
-e0ff08ca B driverFlags	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:23
-e0ff08cc B currentDriver	C:/Users/justs/Documents/GitHub/SGDK/src/z80_ctrl.c:22
-e0ff08ce b xgmWaitMean	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm.c:41
-e0ff08d0 b xgmIdleMean	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm.c:40
-e0ff08d2 b xgmTabInd	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm.c:39
-e0ff08d4 b xgmWaitTab	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm.c:38
-e0ff0914 b xgmIdleTab	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm.c:37
-e0ff0954 B xgmTempoCnt	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm.c:34
-e0ff0956 b xgmTempoDef	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm.c:32
-e0ff0958 b xgmTempo	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm.c:31
-e0ff095a b xgm2WaitMean	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:191
-e0ff095c b xgm2IdleMean	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:190
-e0ff095e b xgm2WaitTabInd	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:189
-e0ff0960 b xgm2IdleTabInd	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:188
-e0ff0962 b xgm2WaitTab	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:187
-e0ff096a b xgm2IdleTab	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:186
-e0ff0972 b fadeEndProcess	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:183
-e0ff0976 b fadeCount	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:182
-e0ff0978 b fadePSGVolStep	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:181
-e0ff097a b fadeFMVolStep	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:180
-e0ff097c b fadePSGVol	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:179
-e0ff097e b fadeFMVol	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:178
-e0ff0980 b restoreVolume	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:175
-e0ff0982 b psgVol	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:174
-e0ff0984 b fmVol	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:173
-e0ff0986 b xgm2Tempo	C:/Users/justs/Documents/GitHub/SGDK/src/snd/xgm2.c:170
-e0ff0988 b joyEventCB	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:47
-e0ff098c b gport	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:44
-e0ff098e b extSet	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:43
-e0ff098f b gun	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:42
-e0ff0990 b phase	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:40
-e0ff0991 b retry	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:39
-e0ff0992 b portType	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:37
-e0ff0994 b portSupport	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:36
-e0ff0996 b joyAxisY	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:34
-e0ff09a6 b joyAxisX	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:33
-e0ff09b6 b joyState	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:32
-e0ff09c6 b joyType	C:/Users/justs/Documents/GitHub/SGDK/src/joy.c:31
-e0ff09ce B spriteVramSize	C:/Users/justs/Documents/GitHub/SGDK/src/sprite_eng.c:90
-e0ff09d0 b vram	C:/Users/justs/Documents/GitHub/SGDK/src/sprite_eng.c:87
-e0ff09dc B firstSprite	C:/Users/justs/Documents/GitHub/SGDK/src/sprite_eng.c:83
-e0ff09e0 B spritesPool	C:/Users/justs/Documents/GitHub/SGDK/src/sprite_eng.c:80
-e0ff09e4 B _bend
+0000043c t slower	D:\apps\SGDK/src/bmp.c:1471
+00000440 t moreadj	D:\apps\SGDK/src/bmp.c:1471
+0000044e t adj	D:\apps\SGDK/src/bmp.c:1471
+00000458 t ltuns	D:\apps\SGDK/src/bmp.c:1471
+00000468 T secondInt	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/hw_scd.c:45
+00000478 T memset2	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/hw_scd.c:9
+0000049a T memcmp	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/hw_scd.c:17
+000004d6 T custom_memcpy	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/hw_scd.c:32
+000004f4 T InitCd	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/hw_scd.c:54
+00000712 T cddaModejoyEvent	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:460
+000007ac T delay	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:64
+000007d4 T cddaCtrlInput	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:432
+00000870 T cddaDisplay	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:275
+00000e2e T main	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:498
+00000e5a t wait_do_cmd	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:60
+00000e9e t wait_cmd_ack	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:48
+00000ec2 T scd_init_pcm	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:29
+00000ee6 T scd_get_disc_info	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:110
+00000f44 T scd_cdda_get_track_info	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:128
+00000fa6 T scd_cdda_play_track	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:145
+00000ffc T scd_cdda_stop_track	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:154
+00001020 T scd_cdda_toggle_pause	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/scd_pcm.c:161
+00001044 T TSK_init
+0000106a t .loop
+00001072 T TSK_superPost
+00001088 t no_task
+0000108a T TSK_userYield
+00001092 t userYield
+000010bc T _trap_0
+000010e0 T BMP_doVBlankProcess	D:\apps\SGDK/src/bmp.c:1214
+000010ea T DMA_setMaxTransferSize	D:\apps\SGDK/src/dma.c:135
+000010fa T DMA_setMaxTransferSizeToDefault	D:\apps\SGDK/src/dma.c:141
+0000111e T DMA_clearQueue	D:\apps\SGDK/src/dma.c:183
+0000113c T DMA_setBufferSize	D:\apps\SGDK/src/dma.c:151
+00001196 T DMA_setBufferSizeToDefault	D:\apps\SGDK/src/dma.c:167
+000011aa T DMA_initEx	D:\apps\SGDK/src/dma.c:52
+0000125a T DMA_init	D:\apps\SGDK/src/dma.c:47
+00001270 T DMA_flushQueue	D:\apps\SGDK/src/dma.c:194
+000012e4 T DMA_releaseTemp	D:\apps\SGDK/src/dma.c:368
+000012f4 T DMA_allocateTemp	D:\apps\SGDK/src/dma.c:346
+00001360 T DMA_queueDmaFast	D:\apps\SGDK/src/dma.c:454
+000014a4 T DMA_allocateAndQueueDma	D:\apps\SGDK/src/dma.c:382
+00001500 T DMA_copyAndQueueDma	D:\apps\SGDK/src/dma.c:406
+00001574 T DMA_queueDma	D:\apps\SGDK/src/dma.c:432
+000015fe T DMA_doDmaFast	D:\apps\SGDK/src/dma.c:566
+00001702 T DMA_doDma	D:\apps\SGDK/src/dma.c:545
+00001786 T DMA_doCPUCopyDirect	D:\apps\SGDK/src/dma.c:663
+00001832 T DMA_doCPUCopy	D:\apps\SGDK/src/dma.c:640
+000018a6 T DMA_transfer	D:\apps\SGDK/src/dma.c:322
+00001972 T DMA_doVRamFill	D:\apps\SGDK/src/dma.c:704
+00001a16 t TH_CONTROL_PHASE	D:\apps\SGDK/src/joy.c:639
+00001a34 t THREELINE_HANDSHAKE	D:\apps\SGDK/src/joy.c:655
+00001a88 t externalIntCB	D:\apps\SGDK/src/joy.c:281
+00001b54 t read3Btn	D:\apps\SGDK/src/joy.c:675
+00001ba4 t read6Btn	D:\apps\SGDK/src/joy.c:693
+00001c22 t start3lhs	D:\apps\SGDK/src/joy.c:722
+00001d14 t readMouse	D:\apps\SGDK/src/joy.c:773
+00001f18 t readTrackball	D:\apps\SGDK/src/joy.c:1175
+0000206e t readTeamPlayer	D:\apps\SGDK/src/joy.c:844
+0000241a t readLightgun	D:\apps\SGDK/src/joy.c:1027
+000027c0 T JOY_setEventHandler	D:\apps\SGDK/src/joy.c:275
+000027ca T JOY_setSupport	D:\apps\SGDK/src/joy.c:316
+00002c46 T JOY_reset	D:\apps\SGDK/src/joy.c:59
+00003014 T JOY_init	D:\apps\SGDK/src/joy.c:50
+00003022 T JOY_readJoypad	D:\apps\SGDK/src/joy.c:530
+00003072 T JOY_update	D:\apps\SGDK/src/joy.c:1248
+00003210 A scd_fusion_driver_size
+00003368 T divu	D:\apps\SGDK/src/maths.c:106
+00003374 T F16_toInt	D:\apps\SGDK/src/maths.c:286
+0000337c T MEM_init	D:\apps\SGDK/src/memory.c:155
+000033a4 T MEM_getFree	D:\apps\SGDK/src/memory.c:186
+000033d0 T MEM_getLargestFreeBlock	D:\apps\SGDK/src/memory.c:208
+00003406 T MEM_alloc	D:\apps\SGDK/src/memory.c:259
+0000354a T MEM_free	D:\apps\SGDK/src/memory.c:386
+0000357a T MEM_pack	D:\apps\SGDK/src/memory.c:409
+000035ea T memset	D:\apps\SGDK/src/memory.c:694
+0000360a T memcpy	D:\apps\SGDK/src/memory.c:701
+00003626 T PAL_setColors	D:\apps\SGDK/src/pal.c:274
+00003654 T PAL_setPalette	D:\apps\SGDK/src/pal.c:284
+00003676 T PAL_doFadeStep	D:\apps\SGDK/src/pal.c:342
+00003736 t uint16ToStr	D:\apps\SGDK/src/string.c:197
+00003816 T strlen	D:\apps\SGDK/src/string.c:42
+00003828 T strnlen	D:\apps\SGDK/src/string.c:52
+00003860 T strcpy	D:\apps\SGDK/src/string.c:78
+00003872 T strcat	D:\apps\SGDK/src/string.c:121
+0000388e T intToHex	D:\apps\SGDK/src/string.c:237
+00003948 T uintToStr	D:\apps\SGDK/src/string.c:175
+000039e6 T vsprintf	D:\apps\SGDK/src/string.c:441
+00003f28 T sprintf	D:\apps\SGDK/src/string.c:707
+00003f46 T _int_callback	D:\apps\SGDK/src/sys.c:414
+00003f48 T _vblank_dummy_callback	D:\apps\SGDK/src/sys.c:421
+00003f4a T _vint_dummy_callback	D:\apps\SGDK/src/sys.c:427
+00003f4c T _hint_dummy_callback	D:\apps\SGDK/src/sys.c:433
+00003f4e T _extint_dummy_callback	D:\apps\SGDK/src/sys.c:439
+00003f50 t internal_reset	D:\apps\SGDK/src/sys.c:597
+00004038 T SYS_disableInts	D:\apps\SGDK/src/sys.c:801
+0000406a T SYS_enableInts	D:\apps\SGDK/src/sys.c:829
+00004098 T SYS_setVIntCallback	D:\apps\SGDK/src/sys.c:863
+000040ae T SYS_setExtIntCallback	D:\apps\SGDK/src/sys.c:875
+000040c4 T SYS_isInVInt	D:\apps\SGDK/src/sys.c:917
+000040d0 T SYS_doVBlankProcessEx	D:\apps\SGDK/src/sys.c:660
+00004246 T SYS_doVBlankProcess	D:\apps\SGDK/src/sys.c:655
+00004254 T _start_entry	D:\apps\SGDK/src/sys.c:445
+00004308 T _reset_entry	D:\apps\SGDK/src/sys.c:587
+00004324 T addFrameLoad	D:\apps\SGDK/src/sys.c:977
+00004390 T getSubTickInternal	D:\apps\SGDK/src/timer.c:44
+000043ea T getSubTick	D:\apps\SGDK/src/timer.c:57
+0000441e T getTick	D:\apps\SGDK/src/timer.c:63
+0000444a T waitSubTick	D:\apps\SGDK/src/timer.c:109
+000044d2 T waitTick	D:\apps\SGDK/src/timer.c:159
+00004546 T waitMs	D:\apps\SGDK/src/timer.c:194
+000045aa T setRandomSeed	D:\apps\SGDK/src/tools.c:30
+000045c2 T KLog	D:\apps\SGDK/src/tools.c:73
+000045e6 T kprintf	D:\apps\SGDK/src/tools.c:57
+00004622 T KLog_U2_	D:\apps\SGDK/src/tools.c:119
+00004698 T KLog_U3_	D:\apps\SGDK/src/tools.c:153
+0000472c T allocateTileSet	D:\apps\SGDK/src/tools.c:901
+00004756 T unpack	D:\apps\SGDK/src/tools.c:1132
+0000478e T unpackTileSet	D:\apps\SGDK/src/tools.c:1053
+00004802 T VDP_getReg	D:\apps\SGDK/src/vdp.c:194
+00004822 T VDP_setEnable	D:\apps\SGDK/src/vdp.c:328
+00004854 T VDP_setScrollingMode	D:\apps\SGDK/src/vdp.c:531
+0000488c T VDP_getAutoInc	D:\apps\SGDK/src/vdp.c:559
+00004894 T VDP_setAutoInc	D:\apps\SGDK/src/vdp.c:564
+000048ae T VDP_getHVLatching	D:\apps\SGDK/src/vdp.c:591
+000048ba T VDP_setHVLatching	D:\apps\SGDK/src/vdp.c:596
+000048ec T VDP_waitDMACompletion	D:\apps\SGDK/src/vdp.c:842
+000048fa T VDP_resetScreen	D:\apps\SGDK/src/vdp.c:134
+00004a84 T getAdjustedVCounterInternal	D:\apps\SGDK/src/vdp.c:965
+00004ae6 T VDP_waitVBlank	D:\apps\SGDK/src/vdp.c:887
+00004bc2 T VDP_waitVSync	D:\apps\SGDK/src/vdp.c:953
+00004bd0 T updateUserTileMaxIndex	D:\apps\SGDK/src/vdp.c:1026
+00004bea t updateMapsAddress	D:\apps\SGDK/src/vdp.c:1032
+00004c6c T VDP_init	D:\apps\SGDK/src/vdp.c:65
+00004dce T VDP_setReg	D:\apps\SGDK/src/vdp.c:200
+00004ff6 T VDP_setHorizontalScroll	D:\apps\SGDK/src/vdp_bg.c:34
+00005038 T VDP_setVerticalScrollTile	D:\apps\SGDK/src/vdp_bg.c:122
+00005080 T VDP_doVBlankScrollProcess	D:\apps\SGDK/src/vdp_bg.c:132
+00005142 T VDP_setTextPlane	D:\apps\SGDK/src/vdp_bg.c:210
+0000514c T VDP_setTextPalette	D:\apps\SGDK/src/vdp_bg.c:215
+00005170 T VDP_setTextPriority	D:\apps\SGDK/src/vdp_bg.c:221
+00005190 T VDP_drawTextEx	D:\apps\SGDK/src/vdp_bg.c:227
+0000525a T VDP_drawTextBG	D:\apps\SGDK/src/vdp_bg.c:321
+0000528a T VDP_drawText	D:\apps\SGDK/src/vdp_bg.c:380
+000052b0 T VDP_releaseAllSprites	D:\apps\SGDK/src/vdp_spr.c:35
+000052de T VDP_clearSprites	D:\apps\SGDK/src/vdp_spr.c:151
+000052ec T VDP_resetSprites	D:\apps\SGDK/src/vdp_spr.c:27
+000052fa t prepareTileMapDataRowEx	D:\apps\SGDK/src/vdp_tile.c:942
+00005390 T VDP_loadTileData	D:\apps\SGDK/src/vdp_tile.c:28
+000053be T VDP_loadTileSet	D:\apps\SGDK/src/vdp_tile.c:38
+00005434 T VDP_loadFont	D:\apps\SGDK/src/vdp_tile.c:60
+00005458 T VDP_fillTileData	D:\apps\SGDK/src/vdp_tile.c:70
+00005498 T VDP_getPlaneAddress	D:\apps\SGDK/src/vdp_tile.c:80
+0000554e T VDP_setTileMapDataEx	D:\apps\SGDK/src/vdp_tile.c:147
+00005618 t setTileMapDataRowEx	D:\apps\SGDK/src/vdp_tile.c:451
+00005710 T VDP_setTileMapDataRowEx	D:\apps\SGDK/src/vdp_tile.c:510
+000057d0 T Z80_isBusTaken	D:\apps\SGDK/src/z80_ctrl.c:60
+000057e2 T Z80_requestBus	D:\apps\SGDK/src/z80_ctrl.c:69
+00005808 T Z80_getAndRequestBus	D:\apps\SGDK/src/z80_ctrl.c:89
+00005844 T Z80_releaseBus	D:\apps\SGDK/src/z80_ctrl.c:114
+0000584e T Z80_startReset	D:\apps\SGDK/src/z80_ctrl.c:123
+00005858 T Z80_endReset	D:\apps\SGDK/src/z80_ctrl.c:131
+00005862 T Z80_setBank	D:\apps\SGDK/src/z80_ctrl.c:140
+00005876 T Z80_clear	D:\apps\SGDK/src/z80_ctrl.c:167
+000058be T Z80_upload	D:\apps\SGDK/src/z80_ctrl.c:183
+00005926 T Z80_unloadDriver	D:\apps\SGDK/src/z80_ctrl.c:223
+00005982 T Z80_loadDriverInternal	D:\apps\SGDK/src/z80_ctrl.c:253
+000059e8 T Z80_loadDriver	D:\apps\SGDK/src/z80_ctrl.c:285
+00005a8e T Z80_init	D:\apps\SGDK/src/z80_ctrl.c:43
+00005ac4 T Z80_isDriverReady	D:\apps\SGDK/src/z80_ctrl.c:324
+00005afa T Z80_useBusProtection	D:\apps\SGDK/src/z80_ctrl.c:343
+00005b04 T Z80_setBusProtection	D:\apps\SGDK/src/z80_ctrl.c:348
+00005b58 T Z80_enableBusProtection	D:\apps\SGDK/src/z80_ctrl.c:367
+00005b66 T Z80_disableBusProtection	D:\apps\SGDK/src/z80_ctrl.c:372
+00005b72 T Z80_getForceDelayDMA	D:\apps\SGDK/src/z80_ctrl.c:377
+00005b7e T SND_NULL_loadDriver	D:\apps\SGDK/src/snd/sound.c:19
+00005bda t setNextXFrame	D:\apps\SGDK/src/snd/xgm.c:605
+00005c34 T XGM_unloadDriver	D:\apps\SGDK/src/snd/xgm.c:94
+00005c50 T XGM_setMusicTempo	D:\apps\SGDK/src/snd/xgm.c:493
+00005c72 T XGM_loadDriver	D:\apps\SGDK/src/snd/xgm.c:54
+00005d56 T XGM_doVBlankProcess	D:\apps\SGDK/src/snd/xgm.c:662
+00005dac t releaseAccess	D:\apps\SGDK/src/snd/xgm2.c:1057
+00005dc2 t getAccess	D:\apps\SGDK/src/snd/xgm2.c:1029
+00005e2e t setLoopNumber	D:\apps\SGDK/src/snd/xgm2.c:747
+00005e58 t setFMVolume	D:\apps\SGDK/src/snd/xgm2.c:828
+00005eb0 t setPSGVolume	D:\apps\SGDK/src/snd/xgm2.c:846
+00005f08 t setMusicTempo	D:\apps\SGDK/src/snd/xgm2.c:773
+00005f68 T XGM2_loadDriver	D:\apps\SGDK/src/snd/xgm2.c:211
+00006028 T XGM2_unloadDriver	D:\apps\SGDK/src/snd/xgm2.c:242
+00006034 T XGM2_stop	D:\apps\SGDK/src/snd/xgm2.c:421
+00006092 T XGM2_pause	D:\apps\SGDK/src/snd/xgm2.c:446
+000060de T XGM2_doVBlankFadeProcess	D:\apps\SGDK/src/snd/xgm2.c:701
+00006182 T SND_DPCM2_loadDriver	D:\apps\SGDK/src/snd/pcm/snd_dpcm2.c:23
+0000620a T SND_DPCM2_unloadDriver	D:\apps\SGDK/src/snd/pcm/snd_dpcm2.c:53
+0000620c T SND_PCM_loadDriver	D:\apps\SGDK/src/snd/pcm/snd_pcm.c:22
+00006294 T SND_PCM_unloadDriver	D:\apps\SGDK/src/snd/pcm/snd_pcm.c:52
+00006296 T SND_PCM4_loadDriver	D:\apps\SGDK/src/snd/pcm/snd_pcm4.c:24
+00006332 T SND_PCM4_unloadDriver	D:\apps\SGDK/src/snd/pcm/snd_pcm4.c:58
+00006334 T flushQueue
+00006348 t .fq_loop
+00006356 t .fq_end
+00006358 T KDebug_Alert
+00006374 T memset_
+000063ec T memsetU16
+0000644a T memcpy_
+000064ee T SYS_getInterruptMaskLevel
+000064f8 T SYS_setInterruptMaskLevel
+00006510 T SYS_getAndSetInterruptMaskLevel
+0000652a T aplib_unpack
+00006530 t aplib_decrunch
+00006544 t .copy_byte
+00006546 t .next_sequence_init
+00006548 t .next_sequence
+00006558 t .get_3_bits
+00006568 t .write_byte
+0000656c t .short_match
+0000657a t .code_pair
+00006586 t .normal_code_pair
+00006594 t .compare_1280
+00006598 t .compare_128
+0000659c t .domatch_with_2inc
+0000659e t .domatch_with_inc
+000065a0 t .domatch_new_lastpos
+000065a2 t .copy_code_pair
+000065a8 t .loop_do_copy
+000065b2 t .get_bit
+000065ba t .still_bits_left
+000065bc t .decode_gamma
+000065be t .get_more_gamma
+000065c8 t .end_decrunch
+000065d2 T lz4w_unpack
+000065d8 t lz4w_unpack_a
+000065f2 t .jump_table
+00006af0 t .lmr_len_01
+00006c04 t .lmr_len_00
+00006e16 t .lm_len_00
+00006e1c t .next
+00006e2c t .litE_mat0
+00006e2e t .litC_mat0
+00006e30 t .litA_mat0
+00006e32 t .lit8_mat0
+00006e34 t .lit6_mat0
+00006e36 t .lit4_mat0
+00006e38 t .lit2_mat0
+00006e3e t .long_match_1
+00006e50 t .litF_mat0
+00006e52 t .litD_mat0
+00006e54 t .litB_mat0
+00006e56 t .lit9_mat0
+00006e58 t .lit7_mat0
+00006e5a t .lit5_mat0
+00006e5c t .lit3_mat0
+00006e5e t .lit1_mat0
+00006e64 t .long_match_2
+00006e76 t .lit0_mat0
+00006e7a t .long_match_3
+00006e8c t .lm_rom
+00006e98 t .done
+00006e9e t .no_byte
+00006ea8 t .lmr_jump_table
+000072a8 t .litE_mat1
+000072aa t .litC_mat1
+000072ac t .litA_mat1
+000072ae t .lit8_mat1
+000072b0 t .lit6_mat1
+000072b2 t .lit4_mat1
+000072b4 t .lit2_mat1
+000072b6 t .lit0_mat1
+000072d4 t .litF_mat1
+000072d6 t .litD_mat1
+000072d8 t .litB_mat1
+000072da t .lit9_mat1
+000072dc t .lit7_mat1
+000072de t .lit5_mat1
+000072e0 t .lit3_mat1
+000072e2 t .lit1_mat1
+00007302 t .litE_mat2
+00007304 t .litC_mat2
+00007306 t .litA_mat2
+00007308 t .lit8_mat2
+0000730a t .lit6_mat2
+0000730c t .lit4_mat2
+0000730e t .lit2_mat2
+00007310 t .lit0_mat2
+00007330 t .litF_mat2
+00007332 t .litD_mat2
+00007334 t .litB_mat2
+00007336 t .lit9_mat2
+00007338 t .lit7_mat2
+0000733a t .lit5_mat2
+0000733c t .lit3_mat2
+0000733e t .lit1_mat2
+00007360 t .litE_mat3
+00007362 t .litC_mat3
+00007364 t .litA_mat3
+00007366 t .lit8_mat3
+00007368 t .lit6_mat3
+0000736a t .lit4_mat3
+0000736c t .lit2_mat3
+0000736e t .lit0_mat3
+00007390 t .litF_mat3
+00007392 t .litD_mat3
+00007394 t .litB_mat3
+00007396 t .lit9_mat3
+00007398 t .lit7_mat3
+0000739a t .lit5_mat3
+0000739c t .lit3_mat3
+0000739e t .lit1_mat3
+000073c2 t .litE_mat4
+000073c4 t .litC_mat4
+000073c6 t .litA_mat4
+000073c8 t .lit8_mat4
+000073ca t .lit6_mat4
+000073cc t .lit4_mat4
+000073ce t .lit2_mat4
+000073d0 t .lit0_mat4
+000073f4 t .litF_mat4
+000073f6 t .litD_mat4
+000073f8 t .litB_mat4
+000073fa t .lit9_mat4
+000073fc t .lit7_mat4
+000073fe t .lit5_mat4
+00007400 t .lit3_mat4
+00007402 t .lit1_mat4
+00007428 t .litE_mat5
+0000742a t .litC_mat5
+0000742c t .litA_mat5
+0000742e t .lit8_mat5
+00007430 t .lit6_mat5
+00007432 t .lit4_mat5
+00007434 t .lit2_mat5
+00007436 t .lit0_mat5
+0000745c t .litF_mat5
+0000745e t .litD_mat5
+00007460 t .litB_mat5
+00007462 t .lit9_mat5
+00007464 t .lit7_mat5
+00007466 t .lit5_mat5
+00007468 t .lit3_mat5
+0000746a t .lit1_mat5
+00007492 t .litE_mat6
+00007494 t .litC_mat6
+00007496 t .litA_mat6
+00007498 t .lit8_mat6
+0000749a t .lit6_mat6
+0000749c t .lit4_mat6
+0000749e t .lit2_mat6
+000074a0 t .lit0_mat6
+000074c8 t .litF_mat6
+000074ca t .litD_mat6
+000074cc t .litB_mat6
+000074ce t .lit9_mat6
+000074d0 t .lit7_mat6
+000074d2 t .lit5_mat6
+000074d4 t .lit3_mat6
+000074d6 t .lit1_mat6
+00007500 t .litE_mat7
+00007502 t .litC_mat7
+00007504 t .litA_mat7
+00007506 t .lit8_mat7
+00007508 t .lit6_mat7
+0000750a t .lit4_mat7
+0000750c t .lit2_mat7
+0000750e t .lit0_mat7
+00007538 t .litF_mat7
+0000753a t .litD_mat7
+0000753c t .litB_mat7
+0000753e t .lit9_mat7
+00007540 t .lit7_mat7
+00007542 t .lit5_mat7
+00007544 t .lit3_mat7
+00007546 t .lit1_mat7
+00007572 t .litE_mat8
+00007574 t .litC_mat8
+00007576 t .litA_mat8
+00007578 t .lit8_mat8
+0000757a t .lit6_mat8
+0000757c t .lit4_mat8
+0000757e t .lit2_mat8
+00007580 t .lit0_mat8
+000075ac t .litF_mat8
+000075ae t .litD_mat8
+000075b0 t .litB_mat8
+000075b2 t .lit9_mat8
+000075b4 t .lit7_mat8
+000075b6 t .lit5_mat8
+000075b8 t .lit3_mat8
+000075ba t .lit1_mat8
+000075e8 t .litE_mat9
+000075ea t .litC_mat9
+000075ec t .litA_mat9
+000075ee t .lit8_mat9
+000075f0 t .lit6_mat9
+000075f2 t .lit4_mat9
+000075f4 t .lit2_mat9
+000075f6 t .lit0_mat9
+00007624 t .litF_mat9
+00007626 t .litD_mat9
+00007628 t .litB_mat9
+0000762a t .lit9_mat9
+0000762c t .lit7_mat9
+0000762e t .lit5_mat9
+00007630 t .lit3_mat9
+00007632 t .lit1_mat9
+00007662 t .litE_matA
+00007664 t .litC_matA
+00007666 t .litA_matA
+00007668 t .lit8_matA
+0000766a t .lit6_matA
+0000766c t .lit4_matA
+0000766e t .lit2_matA
+00007670 t .lit0_matA
+000076a0 t .litF_matA
+000076a2 t .litD_matA
+000076a4 t .litB_matA
+000076a6 t .lit9_matA
+000076a8 t .lit7_matA
+000076aa t .lit5_matA
+000076ac t .lit3_matA
+000076ae t .lit1_matA
+000076e0 t .litE_matB
+000076e2 t .litC_matB
+000076e4 t .litA_matB
+000076e6 t .lit8_matB
+000076e8 t .lit6_matB
+000076ea t .lit4_matB
+000076ec t .lit2_matB
+000076ee t .lit0_matB
+00007720 t .litF_matB
+00007722 t .litD_matB
+00007724 t .litB_matB
+00007726 t .lit9_matB
+00007728 t .lit7_matB
+0000772a t .lit5_matB
+0000772c t .lit3_matB
+0000772e t .lit1_matB
+00007762 t .litE_matC
+00007764 t .litC_matC
+00007766 t .litA_matC
+00007768 t .lit8_matC
+0000776a t .lit6_matC
+0000776c t .lit4_matC
+0000776e t .lit2_matC
+00007770 t .lit0_matC
+000077a4 t .litF_matC
+000077a6 t .litD_matC
+000077a8 t .litB_matC
+000077aa t .lit9_matC
+000077ac t .lit7_matC
+000077ae t .lit5_matC
+000077b0 t .lit3_matC
+000077b2 t .lit1_matC
+000077e8 t .litE_matD
+000077ea t .litC_matD
+000077ec t .litA_matD
+000077ee t .lit8_matD
+000077f0 t .lit6_matD
+000077f2 t .lit4_matD
+000077f4 t .lit2_matD
+000077f6 t .lit0_matD
+0000782c t .litF_matD
+0000782e t .litD_matD
+00007830 t .litB_matD
+00007832 t .lit9_matD
+00007834 t .lit7_matD
+00007836 t .lit5_matD
+00007838 t .lit3_matD
+0000783a t .lit1_matD
+00007872 t .litE_matE
+00007874 t .litC_matE
+00007876 t .litA_matE
+00007878 t .lit8_matE
+0000787a t .lit6_matE
+0000787c t .lit4_matE
+0000787e t .lit2_matE
+00007880 t .lit0_matE
+000078b8 t .litF_matE
+000078ba t .litD_matE
+000078bc t .litB_matE
+000078be t .lit9_matE
+000078c0 t .lit7_matE
+000078c2 t .lit5_matE
+000078c4 t .lit3_matE
+000078c6 t .lit1_matE
+00007900 t .litE_matF
+00007902 t .litC_matF
+00007904 t .litA_matF
+00007906 t .lit8_matF
+00007908 t .lit6_matF
+0000790a t .lit4_matF
+0000790c t .lit2_matF
+0000790e t .lit0_matF
+00007948 t .litF_matF
+0000794a t .litD_matF
+0000794c t .litB_matF
+0000794e t .lit9_matF
+00007950 t .lit7_matF
+00007952 t .lit5_matF
+00007954 t .lit3_matF
+00007956 t .lit1_matF
+00007992 T PSG_reset	D:\apps\SGDK/src/psg.c:9
+000079ca T SPR_isInitialized	D:\apps\SGDK/src/sprite_eng.c:190
+000079d6 T SPR_defragVRAM	D:\apps\SGDK/src/sprite_eng.c:542
+00007a86 T SRAM_disable	D:\apps\SGDK/src/sram.c:16
+00007a90 T getZeroU8	D:\apps\SGDK/src/types.c:4
+00007a94 T VRAM_releaseRegion	D:\apps\SGDK/src/vram.c:34
+00007aae T VRAM_clearRegion	D:\apps\SGDK/src/vram.c:41
+00007ad8 T VRAM_createRegion	D:\apps\SGDK/src/vram.c:23
+00007b14 T VRAM_getFree	D:\apps\SGDK/src/vram.c:54
+00007b48 T VRAM_getLargestFreeBlock	D:\apps\SGDK/src/vram.c:79
+00007b82 T VRAM_alloc	D:\apps\SGDK/src/vram.c:135
+00007c98 T YM2612_write	D:\apps\SGDK/src/ym2612.c:118
+00007cc8 t writeSlotReg	D:\apps\SGDK/src/ym2612.c:11
+00007d16 t writeChannelReg	D:\apps\SGDK/src/ym2612.c:17
+00007d5a T YM2612_reset	D:\apps\SGDK/src/ym2612.c:23
+00007f18 T write_byte
+00007f24 T write_word
+00007f30 T write_long
+00007f3c T read_byte
+00007f44 T read_word
+00007f4c T read_long
+00007f54 T Kos_Decomp
+00007f6c t Kos_Decomp_Loop
+00007f7e t Kos_Decomp_ChkBit
+00007f86 t Kos_Decomp_RLE
+00007f9a t Kos_Decomp_ChkBit2
+00007fca t Kos_Decomp_SeparateRLE
+00007fe0 t Kos_Decomp_RLELoop
+00007fec t Kos_Decomp_SeparateRLE2
+00007ffc t Kos_Decomp_Done
+00008004 T MDDBG__SymbolDataPtr
+00008008 t __ErrorHandler
+00008008 t MDDBG__ErrorHandler
+00008130 t MDDBG__Error_IdleLoop
+0000814a t MDDBG__Error_InitConsole
+00008156 t MDDBG__Error_MaskStackBoundaries
+000081c0 t MDDBG__Error_DrawOffsetLocation
+000081c4 t MDDBG__Error_DrawOffsetLocation2
+000081ca t MDDBG__Error_DrawOffsetLocation__inj
+00008258 t MDDBG__ErrorHandler_SetupVDP
+0000828e t MDDBG__ErrorHandler_VDPConfig
+000082a4 t MDDBG__ErrorHandler_VDPConfig_Nametables
+000082e0 t MDDBG__ErrorHandler_ConsoleConfig_Initial
+000082e4 t MDDBG__ErrorHandler_ConsoleConfig_Shared
+00008314 t MDDBG__Str_OffsetLocation_24bit
+0000831d t MDDBG__Str_OffsetLocation_32bit
+00008358 t MDDBG__Art1bpp_Font
+00008652 t MDDBG__GetSymbolByOffset
+0000896c t MDDBG__FormatString
+00008a46 t MDDBG__Console_Init
+00008a84 t MDDBG__Console_Reset
+00008a86 t MDDBG__Console_InitShared
+00008ad0 t MDDBG__Console_SetPosAsXY_Stack
+00008ad6 t MDDBG__Console_SetPosAsXY
+00008b0a t MDDBG__Console_GetPosAsXY
+00008b30 t MDDBG__Console_StartNewLine
+00008b5e t MDDBG__Console_SetBasePattern
+00008b7a t MDDBG__Console_SetWidth
+00008b98 t MDDBG__Console_WriteLine_WithPattern
+00008b9a t MDDBG__Console_WriteLine
+00008b9e t MDDBG__Console_Write
+00008c64 t MDDBG__Console_WriteLine_Formatted
+00008c68 t MDDBG__Console_Write_Formatted
+00008c98 t MDDBG__Decomp1bpp
+00008cb4 t MDDBG__KDebug_WriteLine_Formatted
+00008cb8 t MDDBG__KDebug_Write_Formatted
+00008d0c t MDDBG__KDebug_FlushLine
+00008d16 t MDDBG__KDebug_WriteLine
+00008d1a t MDDBG__KDebug_Write
+00008d48 t MDDBG__ErrorHandler_ConsoleOnly
+00008d6e t MDDBG__ErrorHandler_ClearConsole
+00008d98 t MDDBG__ErrorHandler_PauseConsole
+00008dd2 t MDDBG__ErrorHandler_PagesController
+00008e32 t MDDBG__VSync
+00008e6c t MDDBG__ErrorHandler_ExtraDebuggerList
+00008e78 t MDDBG__Debugger_AddressRegisters
+00008ec4 t MDDBG__Debugger_Backtrace
+00008f62 T _Bus_Error
+00008f62 t MDDBG__BusError
+00008f76 T _Address_Error
+00008f76 t MDDBG__AddressError
+00008f8e T _Illegal_Instruction
+00008f8e t MDDBG__IllegalInstr
+00008fac T _Zero_Divide
+00008fac t MDDBG__ZeroDivide
+00008fc2 T _Chk_Instruction
+00008fc2 t MDDBG__ChkInstr
+00008fdc T _Trapv_Instruction
+00008fdc t MDDBG__TrapvInstr
+00008ff8 T _Privilege_Violation
+00008ff8 t MDDBG__PrivilegeViol
+00009016 T _Trace
+00009016 t MDDBG__Trace
+00009026 T _Line_1010_Emulation
+00009026 t MDDBG__Line1010Emu
+00009042 T _Line_1111_Emulation
+00009042 t MDDBG__Line1111Emu
+0000905e T _Error_Exception
+0000905e t MDDBG__ErrorExcept
+00009100 T smp_null
+00009200 T smp_null_dpcm
+00009280 T __mulsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:442
+00009280 T __mulsi3_internal	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:442
+000092a4 T __udivsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:469
+000092a4 T __udivsi3_internal	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:469
+000092cc t L3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:486
+000092ce t L4	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:487
+000092fa t L5	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:508
+000092fc t L6	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:510
+00009300 T __divsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:547
+00009300 T __divsi3_internal	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:547
+0000930e t L1	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:558
+00009318 t L2	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:567
+0000932a t L3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:576
+00009330 T __umodsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:585
+00009360 T __modsi3	/home/runner/work/m68k-elf-gcc/m68k-elf-gcc/.build/HOST-i686-w64-mingw32/m68k-elf/src/gcc/libgcc/config/m68k/lb1sf68.S:611
+00009390 T __CTOR_LIST__
+00009398 T __CTOR_END__
+00009398 T __DTOR_LIST__
+000093a0 T __DTOR_END__
+00009764 t xlt_all.0	D:\apps\SGDK/src/joy.c:846
+00009774 t xlt.1	D:\apps\SGDK/src/joy.c:970
+00009832 T palette_blue	D:\apps\SGDK/src/pal.c:163
+00009852 T palette_green	D:\apps\SGDK/src/pal.c:142
+00009872 T palette_red	D:\apps\SGDK/src/pal.c:121
+00009892 T palette_grey	D:\apps\SGDK/src/pal.c:100
+000098b9 t digits	D:\apps\SGDK/src/string.c:26
+00009982 t lowercase_hexchars	D:\apps\SGDK/src/string.c:24
+00009993 t uppercase_hexchars	D:\apps\SGDK/src/string.c:23
+00009a66 T psgVolTable	D:\apps\SGDK/src/snd/xgm2.c:148
+00009aca T fmVolTable	D:\apps\SGDK/src/snd/xgm2.c:133
+00009b2e T tab_vol	D:\apps\SGDK/src/snd/pcm/tab_vol.c:4
+0000ab2e t sgdk_logo_palette
+0000ab34 T sgdk_logo
+0000ab42 T font_default
+0000ab4a T font_pal_default
+0000ab50 T drv_null
+0000ab8a T drv_xgm
+0000c28a T drv_dpcm2
+0000d08a T drv_pcm
+0000dbba T drv_pcm4
+0000e628 T drv_xgm2
+000106b0 T __INIT_SECTION__
+000106b2 T __FINI_SECTION__
+000106b4 T _etext
+000106b4 t sgdk_logo_palette_data
+000106d4 t font_pal_default_data
+000106f4 T stop_xgm
+000107a0 t font_default_data
+00010a02 t sgdk_logo_data
+00010e3c T scd_fusion_driver
+0001404c T rom_macabre_ima_wav
+000165e8 A rom_stereo_test_u8_wav_size
+00017e3c A rom_macabre_ima_wav_size
+0002be88 T rom_stereo_test_u8_wav
+00042470 A _stext
+e0ff0000 D data_type	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:42
+e0ff0002 D vol	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:38
+e0ff0004 D curr_track	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:36
+e0ff0008 D task_sr
+e0ff000a D task_pc
+e0ff000e D task_regs
+e0ff004a D task_lock
+e0ff004c d randbase	D:\apps\SGDK/src/tools.c:25
+e0ff004e D _edata
+e0ff004e B _start
+e0ff004e b timeout.0	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/hw_scd.c:130
+e0ff0052 B bios_previous_stat	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:54
+e0ff0054 B bios_stat	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:54
+e0ff0056 B track_info	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:52
+e0ff005e B disc_info	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:47
+e0ff0066 B mode	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:41
+e0ff0068 B prev_track	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:36
+e0ff006a B last_track	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:36
+e0ff006c B first_track	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:36
+e0ff006e B previous	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:36
+e0ff0070 B buttons	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:36
+e0ff0072 B text	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:35
+e0ff009e B cd_ok	C:\Users\matth\OneDrive\Documents\Files\Personal\DevWork\md\Other\SegaCDMode1PCM/main.c:34
+e0ff00a0 b phase	D:\apps\SGDK/src/bmp.c:68
+e0ff00a2 b queueTransferSize	D:\apps\SGDK/src/dma.c:41
+e0ff00a4 b queueIndexLimit	D:\apps\SGDK/src/dma.c:40
+e0ff00a6 b queueIndex	D:\apps\SGDK/src/dma.c:39
+e0ff00a8 b dataBufferSize	D:\apps\SGDK/src/dma.c:36
+e0ff00aa b flag	D:\apps\SGDK/src/dma.c:33
+e0ff00ac b maxTransferPerFrame	D:\apps\SGDK/src/dma.c:32
+e0ff00ae b queueSize	D:\apps\SGDK/src/dma.c:31
+e0ff00b0 b nextDataBuffer	D:\apps\SGDK/src/dma.c:28
+e0ff00b4 B dmaDataBuffer	D:\apps\SGDK/src/dma.c:27
+e0ff00b8 B dmaQueues	D:\apps\SGDK/src/dma.c:24
+e0ff00bc b joyEventCB	D:\apps\SGDK/src/joy.c:47
+e0ff00c0 b gport	D:\apps\SGDK/src/joy.c:44
+e0ff00c2 b extSet	D:\apps\SGDK/src/joy.c:43
+e0ff00c3 b gun	D:\apps\SGDK/src/joy.c:42
+e0ff00c4 b phase	D:\apps\SGDK/src/joy.c:40
+e0ff00c5 b retry	D:\apps\SGDK/src/joy.c:39
+e0ff00c6 b portType	D:\apps\SGDK/src/joy.c:37
+e0ff00c8 b portSupport	D:\apps\SGDK/src/joy.c:36
+e0ff00ca b joyAxisY	D:\apps\SGDK/src/joy.c:34
+e0ff00da b joyAxisX	D:\apps\SGDK/src/joy.c:33
+e0ff00ea b joyState	D:\apps\SGDK/src/joy.c:32
+e0ff00fa b joyType	D:\apps\SGDK/src/joy.c:31
+e0ff0102 b heap	D:\apps\SGDK/src/memory.c:153
+e0ff0106 b free	D:\apps\SGDK/src/memory.c:152
+e0ff010a b fadeCounter	D:\apps\SGDK/src/pal.c:201
+e0ff010c b fadeSize	D:\apps\SGDK/src/pal.c:200
+e0ff010e b fadeInd	D:\apps\SGDK/src/pal.c:199
+e0ff0110 b fadeSB	D:\apps\SGDK/src/pal.c:197
+e0ff0190 b fadeSG	D:\apps\SGDK/src/pal.c:196
+e0ff0210 b fadeSR	D:\apps\SGDK/src/pal.c:195
+e0ff0290 b fadeB	D:\apps\SGDK/src/pal.c:194
+e0ff0310 b fadeG	D:\apps\SGDK/src/pal.c:193
+e0ff0390 b fadeR	D:\apps\SGDK/src/pal.c:192
+e0ff0410 B fadeCurrentPal	D:\apps\SGDK/src/pal.c:189
+e0ff0490 b lastVTimer.0	D:\apps\SGDK/src/sys.c:979
+e0ff0492 b lastSubTick	D:\apps\SGDK/src/sys.c:122
+e0ff0496 b frameCnt	D:\apps\SGDK/src/sys.c:121
+e0ff049a b cpuFrameLoad	D:\apps\SGDK/src/sys.c:120
+e0ff049c b frameLoadIndex	D:\apps\SGDK/src/sys.c:119
+e0ff049e b frameLoads	D:\apps\SGDK/src/sys.c:118
+e0ff04ae b flags	D:\apps\SGDK/src/sys.c:115
+e0ff04b0 b disableIntStack	D:\apps\SGDK/src/sys.c:114
+e0ff04b2 B intLevelSave	D:\apps\SGDK/src/sys.c:113
+e0ff04b4 B intTrace	D:\apps\SGDK/src/sys.c:110
+e0ff04b6 B VBlankProcess	D:\apps\SGDK/src/sys.c:109
+e0ff04b8 B vblankCB	D:\apps\SGDK/src/sys.c:107
+e0ff04bc B intCB	D:\apps\SGDK/src/sys.c:104
+e0ff04c0 B eintCB	D:\apps\SGDK/src/sys.c:103
+e0ff04c4 B hintCaller	D:\apps\SGDK/src/sys.c:102
+e0ff04ca B vintCB	D:\apps\SGDK/src/sys.c:101
+e0ff04ce b lastTick	D:\apps\SGDK/src/timer.c:39
+e0ff04d2 B vtimer	D:\apps\SGDK/src/timer.c:36
+e0ff04d6 B randomSeedSet	D:\apps\SGDK/src/tools.c:27
+e0ff04d8 B lastVCnt	D:\apps\SGDK/src/vdp.c:62
+e0ff04da B windowWidthSft	D:\apps\SGDK/src/vdp.c:60
+e0ff04dc B planeHeightSft	D:\apps\SGDK/src/vdp.c:59
+e0ff04de B planeWidthSft	D:\apps\SGDK/src/vdp.c:58
+e0ff04e0 B windowWidth	D:\apps\SGDK/src/vdp.c:57
+e0ff04e2 B planeHeight	D:\apps\SGDK/src/vdp.c:56
+e0ff04e4 B planeWidth	D:\apps\SGDK/src/vdp.c:55
+e0ff04e6 B screenHeight	D:\apps\SGDK/src/vdp.c:54
+e0ff04e8 B screenWidth	D:\apps\SGDK/src/vdp.c:53
+e0ff04ea B userTileMaxIndex	D:\apps\SGDK/src/vdp.c:51
+e0ff04ec B maps_addr	D:\apps\SGDK/src/vdp.c:49
+e0ff04ee B slist_addr	D:\apps\SGDK/src/vdp.c:48
+e0ff04f0 B hscrl_addr	D:\apps\SGDK/src/vdp.c:47
+e0ff04f2 B bgb_addr	D:\apps\SGDK/src/vdp.c:46
+e0ff04f4 B bga_addr	D:\apps\SGDK/src/vdp.c:45
+e0ff04f6 B window_addr	D:\apps\SGDK/src/vdp.c:44
+e0ff04f8 b regValues	D:\apps\SGDK/src/vdp.c:42
+e0ff050b b vscroll_update	D:\apps\SGDK/src/vdp_bg.c:31
+e0ff050c b hscroll_update	D:\apps\SGDK/src/vdp_bg.c:30
+e0ff050e b vscroll	D:\apps\SGDK/src/vdp_bg.c:29
+e0ff0512 b hscroll	D:\apps\SGDK/src/vdp_bg.c:28
+e0ff0516 B curTileInd	D:\apps\SGDK/src/vdp_bg.c:26
+e0ff0518 b text_basetile	D:\apps\SGDK/src/vdp_bg.c:23
+e0ff051a b text_plan	D:\apps\SGDK/src/vdp_bg.c:22
+e0ff051e b free	D:\apps\SGDK/src/vdp_spr.c:24
+e0ff0522 b allocStack	D:\apps\SGDK/src/vdp_spr.c:22
+e0ff0662 B highestVDPSpriteIndex	D:\apps\SGDK/src/vdp_spr.c:19
+e0ff0664 B vdpSpriteCache	D:\apps\SGDK/src/vdp_spr.c:14
+e0ff0964 B busProtectSignalAddress	D:\apps\SGDK/src/z80_ctrl.c:24
+e0ff0966 B driverFlags	D:\apps\SGDK/src/z80_ctrl.c:23
+e0ff0968 B currentDriver	D:\apps\SGDK/src/z80_ctrl.c:22
+e0ff096a b xgmWaitMean	D:\apps\SGDK/src/snd/xgm.c:41
+e0ff096c b xgmIdleMean	D:\apps\SGDK/src/snd/xgm.c:40
+e0ff096e b xgmTabInd	D:\apps\SGDK/src/snd/xgm.c:39
+e0ff0970 b xgmWaitTab	D:\apps\SGDK/src/snd/xgm.c:38
+e0ff09b0 b xgmIdleTab	D:\apps\SGDK/src/snd/xgm.c:37
+e0ff09f0 B xgmTempoCnt	D:\apps\SGDK/src/snd/xgm.c:34
+e0ff09f2 b xgmTempoDef	D:\apps\SGDK/src/snd/xgm.c:32
+e0ff09f4 b xgmTempo	D:\apps\SGDK/src/snd/xgm.c:31
+e0ff09f6 b xgm2WaitMean	D:\apps\SGDK/src/snd/xgm2.c:191
+e0ff09f8 b xgm2IdleMean	D:\apps\SGDK/src/snd/xgm2.c:190
+e0ff09fa b xgm2WaitTabInd	D:\apps\SGDK/src/snd/xgm2.c:189
+e0ff09fc b xgm2IdleTabInd	D:\apps\SGDK/src/snd/xgm2.c:188
+e0ff09fe b xgm2WaitTab	D:\apps\SGDK/src/snd/xgm2.c:187
+e0ff0a06 b xgm2IdleTab	D:\apps\SGDK/src/snd/xgm2.c:186
+e0ff0a0e b fadeEndProcess	D:\apps\SGDK/src/snd/xgm2.c:183
+e0ff0a12 b fadeCount	D:\apps\SGDK/src/snd/xgm2.c:182
+e0ff0a14 b fadePSGVolStep	D:\apps\SGDK/src/snd/xgm2.c:181
+e0ff0a16 b fadeFMVolStep	D:\apps\SGDK/src/snd/xgm2.c:180
+e0ff0a18 b fadePSGVol	D:\apps\SGDK/src/snd/xgm2.c:179
+e0ff0a1a b fadeFMVol	D:\apps\SGDK/src/snd/xgm2.c:178
+e0ff0a1c b restoreVolume	D:\apps\SGDK/src/snd/xgm2.c:175
+e0ff0a1e b psgVol	D:\apps\SGDK/src/snd/xgm2.c:174
+e0ff0a20 b fmVol	D:\apps\SGDK/src/snd/xgm2.c:173
+e0ff0a22 b xgm2Tempo	D:\apps\SGDK/src/snd/xgm2.c:170
+e0ff0a24 B spriteVramSize	D:\apps\SGDK/src/sprite_eng.c:90
+e0ff0a26 b vram	D:\apps\SGDK/src/sprite_eng.c:87
+e0ff0a32 B firstSprite	D:\apps\SGDK/src/sprite_eng.c:83
+e0ff0a36 B spritesPool	D:\apps\SGDK/src/sprite_eng.c:80
+e0ff0a3a B _bend
 e1000000 A __stack

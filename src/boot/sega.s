@@ -142,14 +142,6 @@ no_user_task:
         movem.l %d0-%d1/%a0-%a1,-(%sp)
         ori.w   #0x0001, intTrace           /* in V-Int */
         addq.l  #1, vtimer                  /* increment frame counter (more a vint counter) */
-
-        tst.w   gen_lvl2                    /* if SCD present, generate IRQ 2 */
-        beq.b   1f
-        lea     0xA12000,a0
-        move.w  (a0),d0
-        ori.w   #0x0100,d0
-        move.w  d0,(a0)
-1:
         btst    #3, VBlankProcess+1         /* PROCESS_XGM_TASK ? (use VBlankProcess+1 as btst is a byte operation) */
         beq.s   no_xgm_task
 
