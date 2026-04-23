@@ -1,4 +1,4 @@
-#include "scd_pcm.h"
+#include "../inc/scd_pcm.h"
 
 typedef struct
 {

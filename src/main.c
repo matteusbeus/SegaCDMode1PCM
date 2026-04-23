@@ -4,9 +4,9 @@
  * and Chilly Willy
  * with SGDK mods by Matt Bennion (Matteusbeus)
  */
-#include "hw_md.h"
-#include "hw_scd.h"
-#include "scd_pcm.h"
+#include "../inc/hw_md.h"
+#include "../inc/hw_scd.h"
+#include "../inc/scd_pcm.h"
 
 // Text positions
 #define POS_TITLE_1 2
@@ -508,7 +508,7 @@ int main(void) {
     scd_init_pcm();
 
     // Swap between PCM (0) and CDDA (1) Mode
-    mode = 1;
+    mode = 0;
 
     switch(mode) 
     {

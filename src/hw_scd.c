@@ -1,10 +1,10 @@
-#include "hw_md.h"
-#include "hw_scd.h"
-#include "res/resources.h"
+#include "../inc/hw_md.h"
+#include "../inc/hw_scd.h"
+#include "../res/resources.h"
 
 extern void Kos_Decomp(u8 *src, u8 *dst);
 
-int memcmp(const void *ptr1, const void *ptr2, u32 num);
+int memcmp2(const void *ptr1, const void *ptr2, u32 num);
 
 void *memset2(void *ptr, int value, u32 num) {
     unsigned char *p = (unsigned char *)ptr;
@@ -14,7 +14,7 @@ void *memset2(void *ptr, int value, u32 num) {
     return ptr;
 }
 
-int memcmp(const void *ptr1, const void *ptr2, u32 num) {
+int memcmp2(const void *ptr1, const void *ptr2, u32 num) {
     const unsigned char *p1 = (const unsigned char *)ptr1;
     const unsigned char *p2 = (const unsigned char *)ptr2;
 
@@ -62,17 +62,17 @@ u16 InitCd(void) {
      * Program RAM bank is at 0x420000, and the Word RAM is at 0x600000.
      */
     bios = (char *)0x415800;
-    if (memcmp(bios + 0x6D, "SEGA", 4))  // Check if the BIOS starts with "SEGA"
+    if (memcmp2(bios + 0x6D, "SEGA", 4))  // Check if the BIOS starts with "SEGA"
     {
         bios = (char *)0x416000;
-        if (memcmp(bios + 0x6D, "SEGA", 4))  // Check if the BIOS starts with "SEGA"
+        if (memcmp2(bios + 0x6D, "SEGA", 4))  // Check if the BIOS starts with "SEGA"
         {
             // Check for WonderMega/X'Eye
-            if (memcmp(bios + 0x6D, "WONDER", 6))  // Check if the BIOS starts with "WONDER"
+            if (memcmp2(bios + 0x6D, "WONDER", 6))  // Check if the BIOS starts with "WONDER"
             {
                 bios = (char *)0x41AD00; // Might also be 0x40D500
                 // Check for LaserActive
-                if (memcmp(bios + 0x6D, "SEGA", 4))  // Check if the BIOS starts with "SEGA"
+                if (memcmp2(bios + 0x6D, "SEGA", 4))  // Check if the BIOS starts with "SEGA"
                     return 0; // no CD
             }
         }
