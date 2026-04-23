@@ -31,8 +31,8 @@
 #define POS_UD 23
 #define POS_MODE 24
 
-u16 cd_ok;
-char text[44];
+u16 cd_ok = 0;
+char text[44] = {0};
 u16 buttons = 0, previous = 0, first_track = 0, last_track = 0, curr_track = 1, prev_track = 0;
 u8 last_src = 0;
 s16 pan = 128, vol = 255;
@@ -51,8 +51,10 @@ union {
     long long int value;
 } track_info;
 
-u16 bios_stat, bios_previous_stat = 0;
+u16 bios_stat = 0;
+u16 bios_previous_stat = 0;
 
+void inialiseVars();
 void delay(s16 vblanks);
 int pcmDisplay();
 void pcmCtrlInput();
@@ -194,9 +196,9 @@ void pcmCtrlInput()
     }
     if (((buttons ^ previous) & BUTTON_C) && (buttons & BUTTON_C))
     {   
-        // To call this function, the CD must have a file named "ZAMBOLINO.PCM".
-        //scd_cdda_set_volume(1024);
-        //scd_spcm_play_track("ZAMBOLINO.PCM", 0);
+        // To call this function, the CD must have a file named "ZAMBOLIN.PCM".
+        scd_cdda_set_volume(1024);
+        scd_spcm_play_track("ZAMBOLIN.PCM", 0);
     }
     
     if (((buttons ^ previous) & BUTTON_X) && (buttons & BUTTON_X))
@@ -497,7 +499,38 @@ void cddaModejoyEvent(u16 joy, u16 changed, u16 state)
 
 }
 
-int main(void) {
+void inialiseVars() 
+{
+    cd_ok = 0;
+    text[0] = '\0';
+    buttons = 0;
+    previous = 0;
+    first_track = 0;
+    last_track = 0;
+    curr_track = 1;
+    prev_track = 0;
+    last_src = 0;
+    pan = 128;
+    vol = 255;
+    for (int i = 0; i < 9; i++) {
+        src_paused[i] = 0;
+    }
+    new_src = 0;
+    mode = 0;
+    data_type = 255;
+    bios_stat = 0;
+    bios_previous_stat = 0;
+    disc_info.value = 0;
+    track_info.value = 0;
+}
+
+int main(bool hardReset)
+{
+
+    if (!hardReset)
+        SYS_hardReset();
+
+    inialiseVars();
 
     /*
     * Initialize the CD
