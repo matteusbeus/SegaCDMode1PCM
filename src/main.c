@@ -87,6 +87,7 @@ int pcmDisplay()
     */
     // Load wav from Cart ROM to CD RAM (this commented example works but isn't recommended for use in this demo)
     //scd_upload_buf(1, (u8 *)&rom_macabre_ima_wav, sizeof(rom_macabre_ima_wav));
+    //scd_upload_buf(2, (u8 *)&rom_stereo_test_u8_wav, sizeof(rom_stereo_test_u8_wav));
     
     // Load wavs from CD to CD RAM
     scd_src_load_file("MACABRE.WAV", 1);
@@ -193,8 +194,9 @@ void pcmCtrlInput()
     }
     if (((buttons ^ previous) & BUTTON_C) && (buttons & BUTTON_C))
     {   
-        scd_cdda_set_volume(1024);
-        scd_spcm_play_track("ZAMBOLIN.PCM", 0);
+        // To call this function, the CD must have a file named "ZAMBOLINO.PCM".
+        //scd_cdda_set_volume(1024);
+        //scd_spcm_play_track("ZAMBOLINO.PCM", 0);
     }
     
     if (((buttons ^ previous) & BUTTON_X) && (buttons & BUTTON_X))
