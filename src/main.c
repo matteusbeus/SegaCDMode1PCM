@@ -85,8 +85,8 @@ int pcmDisplay()
     /*
     * Upload test samples
     */
-    // Load wav from Cart ROM to CD RAM
-    //scd_upload_buf(1, (u8 *)&macabre_ima_wav, sizeof(macabre_ima_wav));
+    // Load wav from Cart ROM to CD RAM (this commented example works but isn't recommended for use in this demo)
+    //scd_upload_buf(1, (u8 *)&rom_macabre_ima_wav, sizeof(rom_macabre_ima_wav));
     
     // Load wavs from CD to CD RAM
     scd_src_load_file("MACABRE.WAV", 1);
